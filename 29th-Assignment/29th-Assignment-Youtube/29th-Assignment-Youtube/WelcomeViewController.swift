@@ -9,14 +9,20 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    // MARK: IBOutlets
+    
     @IBOutlet var welcomeLabel: UILabel!
     var userName: String?
     
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUserNameInLabel()
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: - Methods
+    // MARK: Custom Method
     
     func setUserNameInLabel() {
         if let user = userName {
@@ -25,6 +31,7 @@ class WelcomeViewController: UIViewController {
         }
     }
     
+    // MARK: IBActions
     @IBAction func confirmButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
