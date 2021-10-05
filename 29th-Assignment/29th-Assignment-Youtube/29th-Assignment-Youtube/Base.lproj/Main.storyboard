@@ -12,7 +12,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +83,6 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="BQc-U5-vtq" id="kBk-eK-T60"/>
-                        <outlet property="logoLabel" destination="gyt-GN-lcu" id="P1z-sU-Sy6"/>
                         <outlet property="nameTextField" destination="FaU-Cy-gV4" id="Nud-Ua-Sj6"/>
                         <outlet property="passwordTextField" destination="CuG-4a-vcf" id="ZlX-F0-rvY"/>
                     </connections>

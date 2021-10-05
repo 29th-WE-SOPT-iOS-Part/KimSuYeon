@@ -24,9 +24,15 @@ class SignInViewController: UIViewController {
     
     // MARK: IBActions
     @IBAction func createAccountButton(_ sender: Any) {
+        
     }
     
     @IBAction func nextButton(_ sender: Any) {
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
+        welcomeVC.userName = nameTextField.text
+        welcomeVC.modalPresentationStyle = .fullScreen
+        self.present(welcomeVC, animated: true, completion: nil)
     }
+    
 }
