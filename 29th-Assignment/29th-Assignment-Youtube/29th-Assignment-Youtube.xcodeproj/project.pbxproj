@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D146AED270CB4910009341B /* AppDelegate.swift */; };
 		4D146AF0270CB4910009341B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D146AEF270CB4910009341B /* SceneDelegate.swift */; };
-		4D146AF2270CB4910009341B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D146AF1270CB4910009341B /* ViewController.swift */; };
 		4D146AF5270CB4910009341B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF3270CB4910009341B /* Main.storyboard */; };
 		4D146AF7270CB4930009341B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF6270CB4930009341B /* Assets.xcassets */; };
 		4D146AFA270CB4930009341B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF8270CB4930009341B /* LaunchScreen.storyboard */; };
+		4D619B60270CC0B4009916EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B5F270CC0B4009916EC /* SignUpViewController.swift */; };
+		4D619B62270CC0E1009916EC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B61270CC0E1009916EC /* WelcomeViewController.swift */; };
+		4D8D0374270CBC4A00824081 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D146AEA270CB4910009341B /* 29th-Assignment-Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29th-Assignment-Youtube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D146AED270CB4910009341B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D146AEF270CB4910009341B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D146AF1270CB4910009341B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D146AF4270CB4910009341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D146AF6270CB4930009341B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D146AF9270CB4930009341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D146AFB270CB4930009341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D619B5F270CC0B4009916EC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4D619B61270CC0E1009916EC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		4D8D0373270CBC4A00824081 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				4D146AED270CB4910009341B /* AppDelegate.swift */,
 				4D146AEF270CB4910009341B /* SceneDelegate.swift */,
-				4D146AF1270CB4910009341B /* ViewController.swift */,
+				4D8D0373270CBC4A00824081 /* SignInViewController.swift */,
 				4D146AF3270CB4910009341B /* Main.storyboard */,
 				4D146AF6270CB4930009341B /* Assets.xcassets */,
 				4D146AF8270CB4930009341B /* LaunchScreen.storyboard */,
 				4D146AFB270CB4930009341B /* Info.plist */,
+				4D619B5F270CC0B4009916EC /* SignUpViewController.swift */,
+				4D619B61270CC0E1009916EC /* WelcomeViewController.swift */,
 			);
 			path = "29th-Assignment-Youtube";
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D146AF2270CB4910009341B /* ViewController.swift in Sources */,
+				4D8D0374270CBC4A00824081 /* SignInViewController.swift in Sources */,
+				4D619B62270CC0E1009916EC /* WelcomeViewController.swift in Sources */,
 				4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */,
+				4D619B60270CC0B4009916EC /* SignUpViewController.swift in Sources */,
 				4D146AF0270CB4910009341B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
