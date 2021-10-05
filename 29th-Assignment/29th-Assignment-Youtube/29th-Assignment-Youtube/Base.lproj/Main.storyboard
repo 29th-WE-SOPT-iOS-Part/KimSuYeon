@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pg3-TA-Bcb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -81,15 +81,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="k9D-RE-G3p"/>
                     <connections>
                         <outlet property="emailTextField" destination="BQc-U5-vtq" id="kBk-eK-T60"/>
                         <outlet property="nameTextField" destination="FaU-Cy-gV4" id="Nud-Ua-Sj6"/>
+                        <outlet property="nextButton" destination="eJR-dm-7x0" id="Yke-Le-OjO"/>
                         <outlet property="passwordTextField" destination="CuG-4a-vcf" id="ZlX-F0-rvY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="70.982142857142847"/>
+            <point key="canvasLocation" x="939.13043478260875" y="70.982142857142847"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="6Yt-Nc-qRj">
@@ -129,14 +131,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="7of-Ce-XIe" eventType="touchUpInside" id="8jU-JW-Z0J"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-8d-R3d">
-                                <rect key="frame" x="53" y="520" width="124" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-8d-R3d">
+                                <rect key="frame" x="59" y="522" width="124" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="square" catalog="system" title=" 비밀번호 표시">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="showPasswordButton:" destination="7of-Ce-XIe" eventType="touchUpInside" id="8Ge-Lb-BgZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gM-DK-zBK">
                                 <rect key="frame" x="148" y="77" width="118" height="60"/>
@@ -149,10 +159,17 @@
                         <viewLayoutGuide key="safeArea" id="JPJ-h5-6Oy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="0d2-FU-aFC" id="fni-EX-qmG"/>
+                        <outlet property="nameTextField" destination="uXW-sH-j7G" id="7t9-Uu-tC5"/>
+                        <outlet property="nextButton" destination="lNh-AY-5MG" id="sd5-3w-R4c"/>
+                        <outlet property="passwordTextField" destination="ZP7-WQ-0Qw" id="6J6-nT-S1J"/>
+                        <outlet property="showPasswordButton" destination="vaF-8d-R3d" id="NGH-Nm-Fjd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHE-M3-nJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.86956521739137" y="70.982142857142847"/>
+            <point key="canvasLocation" x="1671.0144927536232" y="70.982142857142847"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="0ma-za-bvu">
@@ -195,7 +212,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKr-pH-nKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524.6376811594205" y="70.982142857142847"/>
+            <point key="canvasLocation" x="2434.7826086956525" y="70.982142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cj9-4L-eq3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pg3-TA-Bcb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KzO-Go-SZB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lD2-4y-yad"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAo-FN-9RU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="70.982142857142847"/>
         </scene>
     </scenes>
     <resources>
