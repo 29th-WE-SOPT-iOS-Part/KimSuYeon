@@ -9,7 +9,6 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    // var iconClick = true
 
     // MARK: IBOutlets
     
