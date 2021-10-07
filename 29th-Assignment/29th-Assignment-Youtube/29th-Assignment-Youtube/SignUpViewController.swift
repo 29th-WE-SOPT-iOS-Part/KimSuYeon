@@ -18,12 +18,11 @@ class SignUpViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var showPasswordButton: UIButton!
     
-
     // MARK: Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.isEnabled = false
-
     }
     
     // MARK: - Methods
@@ -35,13 +34,11 @@ class SignUpViewController: UIViewController {
         } else {
             nextButton.isEnabled = false
         }
-
     }
     
     // MARK: IBActions
     
     @IBAction func showPasswordButton(_ sender: UIButton) {
-        
         sender.isSelected = !sender.isSelected
         
         if sender.isSelected {
@@ -51,8 +48,6 @@ class SignUpViewController: UIViewController {
             passwordTextField.isSecureTextEntry = true
             showPasswordButton.setImage(UIImage(systemName: "square"), for: .normal)
         }
-        
-        
     }
     
     @IBAction func nextButton(_ sender: Any) {

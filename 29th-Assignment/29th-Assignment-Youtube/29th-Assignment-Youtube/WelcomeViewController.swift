@@ -15,10 +15,10 @@ class WelcomeViewController: UIViewController {
     var userName: String?
     
     // MARK: Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUserNameInLabel()
-        // Do any additional setup after loading the view.
     }
     
     // MARK: - Methods

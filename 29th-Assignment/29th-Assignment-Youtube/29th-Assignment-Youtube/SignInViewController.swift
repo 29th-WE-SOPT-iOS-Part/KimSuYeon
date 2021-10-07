@@ -17,11 +17,10 @@ class SignInViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     
     // MARK: Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nextButton.isEnabled = false
-        
     }
     
     // MARK: - Methods
@@ -44,7 +43,6 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
-            
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
         welcomeVC.userName = nameTextField.text
