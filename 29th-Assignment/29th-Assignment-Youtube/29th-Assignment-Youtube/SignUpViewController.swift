@@ -50,18 +50,17 @@ class SignUpViewController: UIViewController {
     
     @IBAction func showPasswordButton(_ sender: UIButton) {
         
-        
-        
+        sender.isSelected = !sender.isSelected
         
         if sender.isSelected {
-            passwordTextField.isSecureTextEntry = true
+            passwordTextField.isSecureTextEntry = false
             showPasswordButton.setImage(UIImage(systemName: "checkmark.square" ), for: .selected)
         } else {
-            passwordTextField.isSecureTextEntry = false
+            passwordTextField.isSecureTextEntry = true
             showPasswordButton.setImage(UIImage(systemName: "square"), for: .normal)
         }
         
-        sender.isSelected = !sender.isSelected
+        
     }
     
     @IBAction func nextButton(_ sender: Any) {
