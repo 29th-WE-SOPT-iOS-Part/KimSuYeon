@@ -21,18 +21,14 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         nextButton.isEnabled = false
-        self.nameTextField.addTarget(self, action: #selector(self.checkFilledTextField(_:)), for: .editingChanged)
-        self.emailTextField.addTarget(self, action: #selector(self.checkFilledTextField(_:)), for: .editingChanged)
-        self.passwordTextField.addTarget(self, action: #selector(self.checkFilledTextField(_:)), for: .editingChanged)
-        // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - Methods
     // MARK: Custom Method
     
-    @objc func checkFilledTextField(_ sender: Any?) {
-        
-        if nameTextField.text != "" && emailTextField.text != "" && passwordTextField.text != "" {
+    @objc func textFieldDidEndEditing(_ textField: UITextField) {
+        if nameTextField.hasText && emailTextField.hasText && passwordTextField.hasText {
             nextButton.isEnabled = true
         } else {
             nextButton.isEnabled = false
