@@ -8,7 +8,7 @@
 
 | 주차 | 내용 | 과제 |
 |:------:|:------:|:------:|
-|`1주차`| iOS 컴포넌트 이해, Xcode 기본 사용법, View 화면 전환|[📝](https://github.com/29th-WE-SOPT-iOS-Part/KimSuYeon/blob/feature/%231-week1-assignment/29th-Assignment/29th-Assignment-Youtube/README/README-1Week.md)|
+|`1주차`| iOS 컴포넌트 이해, Xcode 기본 사용법, View 화면 전환|[📝](https://github.com/29th-WE-SOPT-iOS-Part/KimSuYeon/blob/main/29th-Assignment/29th-Assignment-Youtube/README/README-1Week.md)|
 |`2주차`| AutoLayout, StackView, TabBarController | |
 |`3주차`| ScrollView, TableView, CollectionView | |
 |`4주차`| Cocoapods & Networking, REST API | |
