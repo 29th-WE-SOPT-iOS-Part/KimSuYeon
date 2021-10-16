@@ -48,7 +48,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="계정만들기"/>
                                 <connections>
-                                    <action selector="createAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4h-Ix-TsQ"/>
+                                    <action selector="createAccountButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9IJ-SO-hPF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJR-dm-7x0">
@@ -60,7 +60,7 @@
                                     <color key="baseBackgroundColor" name="googleblue"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRr-T3-TkD"/>
+                                    <action selector="nextButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPF-9x-o7R"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YouTube도 이동하며 계속하세요. 앱 및 Safari에 서도 Google 서비스에 로그인됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qa2-Mc-T3Y">
@@ -127,7 +127,7 @@
                                     <color key="baseBackgroundColor" name="googleblue"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="nextButton:" destination="7of-Ce-XIe" eventType="touchUpInside" id="8jU-JW-Z0J"/>
+                                    <action selector="nextButtonDidTap:" destination="7of-Ce-XIe" eventType="touchUpInside" id="DVG-qL-QGS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-8d-R3d">
@@ -140,7 +140,7 @@
                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="showPasswordButton:" destination="7of-Ce-XIe" eventType="touchUpInside" id="8Ge-Lb-BgZ"/>
+                                    <action selector="showPasswordButtonDidTap:" destination="7of-Ce-XIe" eventType="touchUpInside" id="clv-yO-mTt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gM-DK-zBK">

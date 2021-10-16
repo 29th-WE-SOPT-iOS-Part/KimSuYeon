@@ -10,7 +10,7 @@ import UIKit
 class SignUpViewController: UIViewController {
     
 
-    // MARK: IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
@@ -18,31 +18,31 @@ class SignUpViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var showPasswordButton: UIButton!
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextButton.isEnabled = false
-        
-        self.nameTextField.addTarget(self, action: #selector(self.textFieldDidEndEditing(_:)), for: .editingChanged)
-        self.emailTextField.addTarget(self, action: #selector(self.textFieldDidEndEditing(_:)), for: .editingChanged)
-        self.passwordTextField.addTarget(self, action: #selector(self.textFieldDidEndEditing(_:)), for: .editingChanged)
+        setNextButton()
+        setTextField()
     }
     
     // MARK: - Methods
     // MARK: Custom Method
     
-    @objc func textFieldDidEndEditing(_ textField: UITextField) {
-        if nameTextField.hasText && emailTextField.hasText && passwordTextField.hasText {
-            nextButton.isEnabled = true
-        } else {
-            nextButton.isEnabled = false
+    func setNextButton() {
+        nextButton.isEnabled = false
+    }
+    
+    func setTextField() {
+        [nameTextField, emailTextField, passwordTextField].forEach {
+            $0?.delegate = self
+            $0?.addTarget(self, action: #selector(self.textFieldDidEndEditing(_:)), for: .editingChanged)
         }
     }
     
-    // MARK: IBActions
+    // MARK: - IBActions
     
-    @IBAction func showPasswordButton(_ sender: UIButton) {
+    @IBAction func showPasswordButtonDidTap(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
         if sender.isSelected {
@@ -54,7 +54,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    @IBAction func nextButton(_ sender: Any) {
+    @IBAction func nextButtonDidTap(_ sender: Any) {
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
         welcomeVC.userName = nameTextField.text
@@ -62,6 +62,26 @@ class SignUpViewController: UIViewController {
         self.present(welcomeVC, animated: true, completion: nil)
         
     }
-    
+}
 
+// MARK: - Extensions
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if nameTextField.hasText && emailTextField.hasText && passwordTextField.hasText {
+            nextButton.isEnabled = true
+        } else {
+            nextButton.isEnabled = false
+        }
+    }
+    
+    func textFieldShouldReturn (_ textField: UITextField) -> Bool {
+        switch textField {
+        case nameTextField: emailTextField.becomeFirstResponder()
+        case emailTextField: passwordTextField.becomeFirstResponder()
+        case passwordTextField: passwordTextField.resignFirstResponder()
+        default: break
+        }
+        return true
+    }
 }

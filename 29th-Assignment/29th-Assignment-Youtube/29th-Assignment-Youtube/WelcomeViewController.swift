@@ -9,12 +9,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
-    // MARK: IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet var welcomeLabel: UILabel!
     var userName: String?
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class WelcomeViewController: UIViewController {
         }
     }
     
-    // MARK: IBActions
+    // MARK: - IBActions
     @IBAction func confirmButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
