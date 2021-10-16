@@ -12,6 +12,10 @@
 		4D146AF5270CB4910009341B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF3270CB4910009341B /* Main.storyboard */; };
 		4D146AF7270CB4930009341B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF6270CB4930009341B /* Assets.xcassets */; };
 		4D146AFA270CB4930009341B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF8270CB4930009341B /* LaunchScreen.storyboard */; };
+		4D4F2386271B1DDD00891F28 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */; };
+		4D4F2388271B20EC00891F28 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */; };
+		4D4F238A271B354600891F28 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */; };
+		4D4F238C271B356900891F28 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */; };
 		4D619B60270CC0B4009916EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B5F270CC0B4009916EC /* SignUpViewController.swift */; };
 		4D619B62270CC0E1009916EC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B61270CC0E1009916EC /* WelcomeViewController.swift */; };
 		4D8D0374270CBC4A00824081 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInViewController.swift */; };
@@ -25,6 +29,10 @@
 		4D146AF6270CB4930009341B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D146AF9270CB4930009341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D146AFB270CB4930009341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		4D619B5F270CC0B4009916EC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4D619B61270CC0E1009916EC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4D8D0373270CBC4A00824081 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 				4D146AFB270CB4930009341B /* Info.plist */,
 				4D619B5F270CC0B4009916EC /* SignUpViewController.swift */,
 				4D619B61270CC0E1009916EC /* WelcomeViewController.swift */,
+				4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */,
+				4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */,
+				4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */,
+				4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */,
 			);
 			path = "29th-Assignment-Youtube";
 			sourceTree = "<group>";
@@ -131,8 +143,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4F238A271B354600891F28 /* SF-Pro-Display-Medium.otf in Resources */,
 				4D146AFA270CB4930009341B /* LaunchScreen.storyboard in Resources */,
+				4D4F2388271B20EC00891F28 /* SF-Pro-Display-Bold.otf in Resources */,
+				4D4F238C271B356900891F28 /* SF-Pro-Display-Semibold.otf in Resources */,
 				4D146AF7270CB4930009341B /* Assets.xcassets in Resources */,
+				4D4F2386271B1DDD00891F28 /* SF-Pro-Display-Regular.otf in Resources */,
 				4D146AF5270CB4910009341B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@ class WelcomeViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var otherLoginButton: UIButton!
     var userName: String?
     
     // MARK: - Life Cycle
@@ -32,7 +33,11 @@ class WelcomeViewController: UIViewController {
     }
     
     // MARK: - IBActions
+    
     @IBAction func confirmButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func otherLoginButtonDidTap(_ sender: Any) {
     }
 }
