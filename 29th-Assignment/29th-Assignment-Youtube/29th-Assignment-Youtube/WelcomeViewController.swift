@@ -35,11 +35,13 @@ class WelcomeViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction func confirmButton(_ sender: Any) {
-        guard let tabbar = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else {return}
+        let tabBarStoryboard = UIStoryboard.init(name: "TabBar", bundle: nil)
+        
+        guard let tabbar = tabBarStoryboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else {return}
         
         tabbar.modalPresentationStyle = .fullScreen
         tabbar.modalTransitionStyle = .crossDissolve
-        self.present(tabbar, animated: true, completion: nil)
+        present(tabbar, animated: true, completion: nil)
     }
     
     @IBAction func otherLoginButtonDidTap(_ sender: Any) {
