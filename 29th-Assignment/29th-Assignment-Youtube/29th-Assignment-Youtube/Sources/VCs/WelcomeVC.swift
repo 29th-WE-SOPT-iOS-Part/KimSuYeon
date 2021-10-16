@@ -45,10 +45,11 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func otherLoginButtonDidTap(_ sender: Any) {
-        guard let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") as? NavigationController else {return}
+        guard let naviVC = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController")
+                as? NavigationController else {return}
         
-        signInVC.modalPresentationStyle = .fullScreen
-        signInVC.modalTransitionStyle = .crossDissolve
-        self.present(signInVC, animated: true, completion: nil)
+          naviVC.modalPresentationStyle = .fullScreen
+          naviVC.modalTransitionStyle = .crossDissolve
+          self.present(naviVC, animated: true, completion: nil)
     }
 }

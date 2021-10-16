@@ -41,13 +41,13 @@ class SignInVC: UIViewController {
     // MARK: - IBActions
     
     @IBAction func createAccountButtonDidTap(_ sender: UIButton) {
-        guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") else {return}
+        guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") else {return}
         
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
     @IBAction func nextButtonDidTap(_ sender: UIButton) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeVC else {return}
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
         welcomeVC.userName = nameTextField.text
         welcomeVC.modalPresentationStyle = .fullScreen

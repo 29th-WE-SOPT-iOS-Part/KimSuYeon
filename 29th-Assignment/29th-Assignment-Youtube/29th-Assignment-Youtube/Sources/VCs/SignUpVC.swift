@@ -55,7 +55,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeVC else {return}
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
         welcomeVC.userName = nameTextField.text
         welcomeVC.modalPresentationStyle = .fullScreen
