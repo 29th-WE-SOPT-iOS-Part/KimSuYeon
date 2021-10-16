@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
     // MARK: - IBOutlets
     

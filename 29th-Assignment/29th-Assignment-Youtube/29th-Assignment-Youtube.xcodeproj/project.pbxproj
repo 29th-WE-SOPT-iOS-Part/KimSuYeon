@@ -16,9 +16,9 @@
 		4D4F2388271B20EC00891F28 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */; };
 		4D4F238A271B354600891F28 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */; };
 		4D4F238C271B356900891F28 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */; };
-		4D619B60270CC0B4009916EC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B5F270CC0B4009916EC /* SignUpViewController.swift */; };
-		4D619B62270CC0E1009916EC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B61270CC0E1009916EC /* WelcomeViewController.swift */; };
-		4D8D0374270CBC4A00824081 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInViewController.swift */; };
+		4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B5F270CC0B4009916EC /* SignUpVC.swift */; };
+		4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B61270CC0E1009916EC /* WelcomeVC.swift */; };
+		4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInVC.swift */; };
 		4D8DC919271B4F53005E664B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC918271B4F53005E664B /* NavigationController.swift */; };
 		4D8DC91B271B527E005E664B /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8DC91A271B527E005E664B /* TabBar.storyboard */; };
 		4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC91C271B56E8005E664B /* TabBarController.swift */; };
@@ -41,9 +41,9 @@
 		4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
-		4D619B5F270CC0B4009916EC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		4D619B61270CC0E1009916EC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		4D8D0373270CBC4A00824081 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4D619B5F270CC0B4009916EC /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		4D619B61270CC0E1009916EC /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		4D8D0373270CBC4A00824081 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		4D8DC918271B4F53005E664B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		4D8DC91A271B527E005E664B /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		4D8DC91C271B56E8005E664B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -86,15 +86,15 @@
 			children = (
 				4D146AED270CB4910009341B /* AppDelegate.swift */,
 				4D146AEF270CB4910009341B /* SceneDelegate.swift */,
-				4D8D0373270CBC4A00824081 /* SignInViewController.swift */,
+				4D8D0373270CBC4A00824081 /* SignInVC.swift */,
 				4D8DC918271B4F53005E664B /* NavigationController.swift */,
 				4D146AF3270CB4910009341B /* Main.storyboard */,
 				4D8DC91A271B527E005E664B /* TabBar.storyboard */,
 				4D146AF6270CB4930009341B /* Assets.xcassets */,
 				4D146AF8270CB4930009341B /* LaunchScreen.storyboard */,
 				4D146AFB270CB4930009341B /* Info.plist */,
-				4D619B5F270CC0B4009916EC /* SignUpViewController.swift */,
-				4D619B61270CC0E1009916EC /* WelcomeViewController.swift */,
+				4D619B5F270CC0B4009916EC /* SignUpVC.swift */,
+				4D619B61270CC0E1009916EC /* WelcomeVC.swift */,
 				4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */,
 				4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */,
 				4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */,
@@ -185,15 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D8D0374270CBC4A00824081 /* SignInViewController.swift in Sources */,
+				4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */,
 				4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */,
 				4D8DC919271B4F53005E664B /* NavigationController.swift in Sources */,
-				4D619B62270CC0E1009916EC /* WelcomeViewController.swift in Sources */,
+				4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */,
 				4D8DC923271B587D005E664B /* AddVC.swift in Sources */,
 				4D8DC927271B58CD005E664B /* KeepVC.swift in Sources */,
 				4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */,
 				4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */,
-				4D619B60270CC0B4009916EC /* SignUpViewController.swift in Sources */,
+				4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */,
 				4D8DC921271B5865005E664B /* ShortsVC.swift in Sources */,
 				4D146AF0270CB4910009341B /* SceneDelegate.swift in Sources */,
 				4D8DC925271B58A9005E664B /* SubscribeVC.swift in Sources */,

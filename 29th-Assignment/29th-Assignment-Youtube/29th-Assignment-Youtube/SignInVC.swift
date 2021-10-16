@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  ViewController.swift
 //  29th-Assignment-Youtube
 //
 //  Created by 김수연 on 2021/10/06.
@@ -7,16 +7,14 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignInVC: UIViewController {
     
-
     // MARK: - IBOutlets
     
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var nextButton: UIButton!
-    @IBOutlet var showPasswordButton: UIButton!
     
     // MARK: - Life Cycle
     
@@ -42,31 +40,24 @@ class SignUpViewController: UIViewController {
     
     // MARK: - IBActions
     
-    @IBAction func showPasswordButtonDidTap(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
+    @IBAction func createAccountButtonDidTap(_ sender: UIButton) {
+        guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") else {return}
         
-        if sender.isSelected {
-            passwordTextField.isSecureTextEntry = false
-            showPasswordButton.setImage(UIImage(systemName: "checkmark.square" ), for: .selected)
-        } else {
-            passwordTextField.isSecureTextEntry = true
-            showPasswordButton.setImage(UIImage(systemName: "square"), for: .normal)
-        }
+        self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
-    @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+    @IBAction func nextButtonDidTap(_ sender: UIButton) {
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeVC else {return}
         
         welcomeVC.userName = nameTextField.text
         welcomeVC.modalPresentationStyle = .fullScreen
         self.present(welcomeVC, animated: true, completion: nil)
-        
     }
 }
 
 // MARK: - Extensions
 
-extension SignUpViewController: UITextFieldDelegate {
+extension SignInVC: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if nameTextField.hasText && emailTextField.hasText && passwordTextField.hasText {
             nextButton.isEnabled = true

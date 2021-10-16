@@ -20,10 +20,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Sign In View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="70.982142857142847"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="6Yt-Nc-qRj">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="7of-Ce-XIe" customClass="SignUpViewController" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="7of-Ce-XIe" customClass="SignUpVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ar-eS-b7R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="1669.5999999999999" y="70.935960591133011"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="0ma-za-bvu">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="ngk-QK-ieb" customClass="WelcomeViewController" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="ngk-QK-ieb" customClass="WelcomeVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ns9-eC-UBG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
