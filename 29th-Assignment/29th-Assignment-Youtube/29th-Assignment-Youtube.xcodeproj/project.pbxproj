@@ -84,29 +84,69 @@
 		4D146AEC270CB4910009341B /* 29th-Assignment-Youtube */ = {
 			isa = PBXGroup;
 			children = (
-				4D146AED270CB4910009341B /* AppDelegate.swift */,
-				4D146AEF270CB4910009341B /* SceneDelegate.swift */,
-				4D8D0373270CBC4A00824081 /* SignInVC.swift */,
-				4D8DC918271B4F53005E664B /* NavigationController.swift */,
-				4D146AF3270CB4910009341B /* Main.storyboard */,
-				4D8DC91A271B527E005E664B /* TabBar.storyboard */,
-				4D146AF6270CB4930009341B /* Assets.xcassets */,
-				4D146AF8270CB4930009341B /* LaunchScreen.storyboard */,
+				4D8DC929271B67E6005E664B /* Resources */,
+				4D8DC92A271B6825005E664B /* Sources */,
 				4D146AFB270CB4930009341B /* Info.plist */,
+				4D8DC92D271B697C005E664B /* Fonts */,
+			);
+			path = "29th-Assignment-Youtube";
+			sourceTree = "<group>";
+		};
+		4D8DC929271B67E6005E664B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D8DC92C271B687F005E664B /* Storyboards */,
+				4D146AEF270CB4910009341B /* SceneDelegate.swift */,
+				4D146AED270CB4910009341B /* AppDelegate.swift */,
+				4D146AF6270CB4930009341B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D8DC92A271B6825005E664B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4D8DC918271B4F53005E664B /* NavigationController.swift */,
+				4D8DC91C271B56E8005E664B /* TabBarController.swift */,
+				4D8DC92B271B683B005E664B /* VCs */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4D8DC92B271B683B005E664B /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D0373270CBC4A00824081 /* SignInVC.swift */,
 				4D619B5F270CC0B4009916EC /* SignUpVC.swift */,
 				4D619B61270CC0E1009916EC /* WelcomeVC.swift */,
-				4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */,
-				4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */,
-				4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */,
-				4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */,
-				4D8DC91C271B56E8005E664B /* TabBarController.swift */,
 				4D8DC91E271B5843005E664B /* HomeVC.swift */,
 				4D8DC920271B5865005E664B /* ShortsVC.swift */,
 				4D8DC922271B587D005E664B /* AddVC.swift */,
 				4D8DC924271B58A9005E664B /* SubscribeVC.swift */,
 				4D8DC926271B58CD005E664B /* KeepVC.swift */,
 			);
-			path = "29th-Assignment-Youtube";
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		4D8DC92C271B687F005E664B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D146AF3270CB4910009341B /* Main.storyboard */,
+				4D8DC91A271B527E005E664B /* TabBar.storyboard */,
+				4D146AF8270CB4930009341B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4D8DC92D271B697C005E664B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */,
+				4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */,
+				4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */,
+				4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
