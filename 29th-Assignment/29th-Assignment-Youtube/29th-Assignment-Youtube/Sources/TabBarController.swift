@@ -29,6 +29,7 @@ class TabBarController: UITabBarController {
         homeVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
         shortsVC.tabBarItem.title = "Shorts"
         shortsVC.tabBarItem.image = UIImage(named: "shortsIcon")
+        shortsVC.tabBarItem.selectedImage = UIImage(named: "shortsIconFill")
         addVC.tabBarItem.title = "추가"
         addVC.tabBarItem.image = UIImage(named: "plusCircleIcon")
         subscribeVC.tabBarItem.title = "구독"
