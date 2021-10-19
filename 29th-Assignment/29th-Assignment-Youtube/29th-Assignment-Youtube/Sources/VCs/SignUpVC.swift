@@ -26,6 +26,11 @@ class SignUpVC: UIViewController {
         setTextField()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setTextFieldEmpty()
+    }
+    
     // MARK: - Methods
     // MARK: Custom Method
     
@@ -36,7 +41,12 @@ class SignUpVC: UIViewController {
     func setTextField() {
         [nameTextField, emailTextField, passwordTextField].forEach {
             $0?.delegate = self
-            $0?.addTarget(self, action: #selector(self.textFieldDidEndEditing(_:)), for: .editingChanged)
+        }
+    }
+    
+    func setTextFieldEmpty() {
+        [nameTextField, emailTextField, passwordTextField].forEach {
+            $0?.text = ""
         }
     }
     
