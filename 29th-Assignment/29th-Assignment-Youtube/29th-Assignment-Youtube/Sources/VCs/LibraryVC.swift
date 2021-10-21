@@ -7,7 +7,7 @@
 
 import UIKit
 
-class KeepVC: UIViewController {
+class LibraryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

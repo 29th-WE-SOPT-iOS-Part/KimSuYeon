@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SubscribeVC: UIViewController {
+class SubscriptionVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
