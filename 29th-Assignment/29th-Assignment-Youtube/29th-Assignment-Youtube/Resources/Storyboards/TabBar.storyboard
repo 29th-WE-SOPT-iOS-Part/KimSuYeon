@@ -43,7 +43,7 @@
         <!--Item-->
         <scene sceneID="UEf-jk-6nA">
             <objects>
-                <viewController storyboardIdentifier="AddVC" id="8tg-8N-lV7" customClass="AddVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlusVC" id="8tg-8N-lV7" customClass="PlusVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vVT-of-aOn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
         <!--Item-->
         <scene sceneID="1xv-7r-JBA">
             <objects>
-                <viewController storyboardIdentifier="SubscribeVC" id="Owh-aT-bel" customClass="SubscribeVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubscriptionVC" id="Owh-aT-bel" customClass="SubscriptionVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rkU-Nc-bsv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
         <!--Item-->
         <scene sceneID="iFb-Q4-bIf">
             <objects>
-                <viewController storyboardIdentifier="KeepVC" id="1OB-wK-ZA0" customClass="KeepVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LibraryVC" id="1OB-wK-ZA0" customClass="LibraryVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FRQ-SD-dF1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

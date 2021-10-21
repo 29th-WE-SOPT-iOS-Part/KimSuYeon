@@ -24,9 +24,9 @@
 		4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC91C271B56E8005E664B /* TabBarController.swift */; };
 		4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC91E271B5843005E664B /* HomeVC.swift */; };
 		4D8DC921271B5865005E664B /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC920271B5865005E664B /* ShortsVC.swift */; };
-		4D8DC923271B587D005E664B /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC922271B587D005E664B /* AddVC.swift */; };
-		4D8DC925271B58A9005E664B /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC924271B58A9005E664B /* SubscribeVC.swift */; };
-		4D8DC927271B58CD005E664B /* KeepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC926271B58CD005E664B /* KeepVC.swift */; };
+		4D8DC923271B587D005E664B /* PlusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC922271B587D005E664B /* PlusVC.swift */; };
+		4D8DC925271B58A9005E664B /* SubscriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC924271B58A9005E664B /* SubscriptionVC.swift */; };
+		4D8DC927271B58CD005E664B /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC926271B58CD005E664B /* LibraryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +49,9 @@
 		4D8DC91C271B56E8005E664B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4D8DC91E271B5843005E664B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		4D8DC920271B5865005E664B /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
-		4D8DC922271B587D005E664B /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
-		4D8DC924271B58A9005E664B /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
-		4D8DC926271B58CD005E664B /* KeepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepVC.swift; sourceTree = "<group>"; };
+		4D8DC922271B587D005E664B /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
+		4D8DC924271B58A9005E664B /* SubscriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionVC.swift; sourceTree = "<group>"; };
+		4D8DC926271B58CD005E664B /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +121,9 @@
 				4D619B61270CC0E1009916EC /* WelcomeVC.swift */,
 				4D8DC91E271B5843005E664B /* HomeVC.swift */,
 				4D8DC920271B5865005E664B /* ShortsVC.swift */,
-				4D8DC922271B587D005E664B /* AddVC.swift */,
-				4D8DC924271B58A9005E664B /* SubscribeVC.swift */,
-				4D8DC926271B58CD005E664B /* KeepVC.swift */,
+				4D8DC922271B587D005E664B /* PlusVC.swift */,
+				4D8DC924271B58A9005E664B /* SubscriptionVC.swift */,
+				4D8DC926271B58CD005E664B /* LibraryVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -229,14 +229,14 @@
 				4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */,
 				4D8DC919271B4F53005E664B /* NavigationController.swift in Sources */,
 				4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */,
-				4D8DC923271B587D005E664B /* AddVC.swift in Sources */,
-				4D8DC927271B58CD005E664B /* KeepVC.swift in Sources */,
+				4D8DC923271B587D005E664B /* PlusVC.swift in Sources */,
+				4D8DC927271B58CD005E664B /* LibraryVC.swift in Sources */,
 				4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */,
 				4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */,
 				4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */,
 				4D8DC921271B5865005E664B /* ShortsVC.swift in Sources */,
 				4D146AF0270CB4910009341B /* SceneDelegate.swift in Sources */,
-				4D8DC925271B58A9005E664B /* SubscribeVC.swift in Sources */,
+				4D8DC925271B58A9005E664B /* SubscriptionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

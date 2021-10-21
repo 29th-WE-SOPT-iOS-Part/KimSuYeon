@@ -17,29 +17,22 @@ class TabBarController: UITabBarController {
     func setTabBar() {
         guard let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC"),
               let shortsVC = self.storyboard?.instantiateViewController(withIdentifier: "ShortsVC"),
-              let addVC = self.storyboard?.instantiateViewController(withIdentifier: "AddVC"),
-              let subscribeVC = self.storyboard?.instantiateViewController(withIdentifier: "SubscribeVC"),
-              let keepVC = self.storyboard?.instantiateViewController(withIdentifier: "KeepVC")
+              let plusVC = self.storyboard?.instantiateViewController(withIdentifier: "PlusVC"),
+              let subscriptionVC = self.storyboard?.instantiateViewController(withIdentifier: "SubscriptionVC"),
+              let libraryVC = self.storyboard?.instantiateViewController(withIdentifier: "LibraryVC")
         else { return }
         
         UITabBar.appearance().tintColor = UIColor.black
         
-        homeVC.tabBarItem.title = "홈"
-        homeVC.tabBarItem.image = UIImage(named: "homeIcon")
-        homeVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
-        shortsVC.tabBarItem.title = "Shorts"
-        shortsVC.tabBarItem.image = UIImage(named: "shortsIcon")
-        shortsVC.tabBarItem.selectedImage = UIImage(named: "shortsIconFill")
-        addVC.tabBarItem.title = "추가"
-        addVC.tabBarItem.image = UIImage(named: "plusCircleIcon")
-        subscribeVC.tabBarItem.title = "구독"
-        subscribeVC.tabBarItem.image = UIImage(named: "subscriptionsIcon")
-        subscribeVC.tabBarItem.selectedImage = UIImage(named: "subscriptionsIconFill")
-        keepVC.tabBarItem.title = "보관함"
-        keepVC.tabBarItem.image = UIImage(named: "LibraryIcon")
-        keepVC.tabBarItem.selectedImage = UIImage(named: "LibraryIconFill")
+        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
+        shortsVC.tabBarItem = UITabBarItem(title: "Shorts", image: UIImage(named: "shortsIcon"), selectedImage: UIImage(named: "shortsIconFill"))
+        plusVC.tabBarItem = UITabBarItem(title: "추가", image: UIImage(named: "plusCircleIcon"), selectedImage: UIImage(named: "plusCircleIcon"))
+        subscriptionVC.tabBarItem = UITabBarItem(title: "구독", image: UIImage(named: "subscriptionsIcon"), selectedImage: UIImage(named: "subscriptionsIconFill"))
+        libraryVC.tabBarItem = UITabBarItem(title: "보관함", image: UIImage(named: "LibraryIcon"), selectedImage: UIImage(named: "LibraryIconFill"))
         
-        setViewControllers([homeVC,shortsVC, addVC, subscribeVC, keepVC], animated: true)
+
+        
+        setViewControllers([homeVC,shortsVC, plusVC, subscriptionVC, libraryVC], animated: true)
     
     }
     
