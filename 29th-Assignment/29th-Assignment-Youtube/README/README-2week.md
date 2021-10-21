@@ -109,7 +109,9 @@ self.dismiss(animated: true) {
 
 #### 🔮 코드리뷰 반영하기 !
 
-결론 ? dissmiss 하는 순간 현재 뷰가 메모리에서 사라지기 때문에 ! 현재 뷰를 다시 가져와서 그 뷰에서 루트 뷰 컨트롤러로 pop해줘야된다 ! 
+결론 ? ~~dissmiss 하는 순간 현재 뷰가 메모리에서 사라지기 때문에 ! 현재 뷰를 다시 가져와서 그 뷰에서 루트 뷰 컨트롤러로 pop해줘야된다~~
+
+-> 수정 : 현재 뷰가 메모리에서 사라지기 때문에 `self.navigationController?` 가 비어있어요. 그리고 애초에 present 로 뷰가 화면전환되었기 때문에 viewDidLoad() 에서 출력해보셔도 비어있습니다! push 로 화면전환을 한 것이 아니기 때문이죠! 그래서 이 부분은 dismiss 하면 메모리에서 뷰가 해제되는데 `self.` 로 접근할 수 있는 것이 없다! 라고 생각하시면 될거같아요👍
 
 ```swift
 @IBAction func otherLoginButtonDidTap(_ sender: Any) {
