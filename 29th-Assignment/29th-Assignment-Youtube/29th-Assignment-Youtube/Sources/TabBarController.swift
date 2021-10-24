@@ -12,6 +12,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBar()
+        setTabBarStyle()
     }
     
     func setTabBar() {
@@ -22,8 +23,6 @@ class TabBarController: UITabBarController {
               let libraryVC = self.storyboard?.instantiateViewController(withIdentifier: "LibraryVC")
         else { return }
         
-        UITabBar.appearance().tintColor = UIColor.black
-        
         homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
         shortsVC.tabBarItem = UITabBarItem(title: "Shorts", image: UIImage(named: "shortsIcon"), selectedImage: UIImage(named: "shortsIconFill"))
         plusVC.tabBarItem = UITabBarItem(title: "추가", image: UIImage(named: "plusCircleIcon"), selectedImage: UIImage(named: "plusCircleIcon"))
@@ -33,7 +32,13 @@ class TabBarController: UITabBarController {
 
         
         setViewControllers([homeVC,shortsVC, plusVC, subscriptionVC, libraryVC], animated: true)
+        
+    }
     
+    func setTabBarStyle() {
+        tabBar.barTintColor = .white
+        tabBar.isTranslucent = false
+        tabBar.tintColor = .black
     }
     
 }
