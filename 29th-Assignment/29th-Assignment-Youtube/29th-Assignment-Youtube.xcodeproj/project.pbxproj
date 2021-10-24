@@ -19,7 +19,6 @@
 		4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B5F270CC0B4009916EC /* SignUpVC.swift */; };
 		4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B61270CC0E1009916EC /* WelcomeVC.swift */; };
 		4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInVC.swift */; };
-		4D8DC919271B4F53005E664B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC918271B4F53005E664B /* NavigationController.swift */; };
 		4D8DC91B271B527E005E664B /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8DC91A271B527E005E664B /* TabBar.storyboard */; };
 		4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC91C271B56E8005E664B /* TabBarController.swift */; };
 		4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC91E271B5843005E664B /* HomeVC.swift */; };
@@ -27,6 +26,9 @@
 		4D8DC923271B587D005E664B /* PlusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC922271B587D005E664B /* PlusVC.swift */; };
 		4D8DC925271B58A9005E664B /* SubscriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC924271B58A9005E664B /* SubscriptionVC.swift */; };
 		4D8DC927271B58CD005E664B /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC926271B58CD005E664B /* LibraryVC.swift */; };
+		4DDA6A032725D5F5005151AC /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA6A012725D5F5005151AC /* VideoTableViewCell.swift */; };
+		4DDA6A042725D5F5005151AC /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA6A022725D5F5005151AC /* VideoTableViewCell.xib */; };
+		4DDBDD462725DE9200248B4A /* VideoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDBDD452725DE9200248B4A /* VideoDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +46,6 @@
 		4D619B5F270CC0B4009916EC /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		4D619B61270CC0E1009916EC /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		4D8D0373270CBC4A00824081 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
-		4D8DC918271B4F53005E664B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		4D8DC91A271B527E005E664B /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		4D8DC91C271B56E8005E664B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4D8DC91E271B5843005E664B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -52,6 +53,9 @@
 		4D8DC922271B587D005E664B /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
 		4D8DC924271B58A9005E664B /* SubscriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionVC.swift; sourceTree = "<group>"; };
 		4D8DC926271B58CD005E664B /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
+		4DDA6A012725D5F5005151AC /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		4DDA6A022725D5F5005151AC /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		4DDBDD452725DE9200248B4A /* VideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +110,7 @@
 		4D8DC92A271B6825005E664B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4D8DC918271B4F53005E664B /* NavigationController.swift */,
-				4D8DC91C271B56E8005E664B /* TabBarController.swift */,
+				4DDBDD442725DE7000248B4A /* Models */,
 				4D8DC92B271B683B005E664B /* VCs */,
 			);
 			path = Sources;
@@ -116,14 +119,9 @@
 		4D8DC92B271B683B005E664B /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				4D8D0373270CBC4A00824081 /* SignInVC.swift */,
-				4D619B5F270CC0B4009916EC /* SignUpVC.swift */,
-				4D619B61270CC0E1009916EC /* WelcomeVC.swift */,
-				4D8DC91E271B5843005E664B /* HomeVC.swift */,
-				4D8DC920271B5865005E664B /* ShortsVC.swift */,
-				4D8DC922271B587D005E664B /* PlusVC.swift */,
-				4D8DC924271B58A9005E664B /* SubscriptionVC.swift */,
-				4D8DC926271B58CD005E664B /* LibraryVC.swift */,
+				4D8DC91C271B56E8005E664B /* TabBarController.swift */,
+				4DDA69FE2725D514005151AC /* Login */,
+				4DDA69FF2725D52E005151AC /* Youtube */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -147,6 +145,62 @@
 				4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4DDA69FE2725D514005151AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D0373270CBC4A00824081 /* SignInVC.swift */,
+				4D619B5F270CC0B4009916EC /* SignUpVC.swift */,
+				4D619B61270CC0E1009916EC /* WelcomeVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4DDA69FF2725D52E005151AC /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				4DDA6A002725D5B0005151AC /* Cells */,
+				4D8DC91E271B5843005E664B /* HomeVC.swift */,
+				4D8DC920271B5865005E664B /* ShortsVC.swift */,
+				4D8DC922271B587D005E664B /* PlusVC.swift */,
+				4D8DC924271B58A9005E664B /* SubscriptionVC.swift */,
+				4D8DC926271B58CD005E664B /* LibraryVC.swift */,
+			);
+			path = Youtube;
+			sourceTree = "<group>";
+		};
+		4DDA6A002725D5B0005151AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4DDA6A062725D629005151AC /* CollectionViewCell */,
+				4DDA6A052725D600005151AC /* TableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4DDA6A052725D600005151AC /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4DDA6A012725D5F5005151AC /* VideoTableViewCell.swift */,
+				4DDA6A022725D5F5005151AC /* VideoTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		4DDA6A062725D629005151AC /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4DDBDD442725DE7000248B4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DDBDD452725DE9200248B4A /* VideoDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +269,7 @@
 				4D146AF7270CB4930009341B /* Assets.xcassets in Resources */,
 				4D4F2386271B1DDD00891F28 /* SF-Pro-Display-Regular.otf in Resources */,
 				4D146AF5270CB4910009341B /* Main.storyboard in Resources */,
+				4DDA6A042725D5F5005151AC /* VideoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +282,12 @@
 			files = (
 				4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */,
 				4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */,
-				4D8DC919271B4F53005E664B /* NavigationController.swift in Sources */,
 				4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */,
 				4D8DC923271B587D005E664B /* PlusVC.swift in Sources */,
 				4D8DC927271B58CD005E664B /* LibraryVC.swift in Sources */,
+				4DDA6A032725D5F5005151AC /* VideoTableViewCell.swift in Sources */,
 				4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */,
+				4DDBDD462725DE9200248B4A /* VideoDataModel.swift in Sources */,
 				4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */,
 				4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */,
 				4D8DC921271B5865005E664B /* ShortsVC.swift in Sources */,
