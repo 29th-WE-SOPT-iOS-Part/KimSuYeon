@@ -29,6 +29,9 @@
 		4DDA6A032725D5F5005151AC /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA6A012725D5F5005151AC /* VideoTableViewCell.swift */; };
 		4DDA6A042725D5F5005151AC /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA6A022725D5F5005151AC /* VideoTableViewCell.xib */; };
 		4DDBDD462725DE9200248B4A /* VideoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDBDD452725DE9200248B4A /* VideoDataModel.swift */; };
+		4DDBDD492726434000248B4A /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDBDD472726434000248B4A /* ChannelCollectionViewCell.swift */; };
+		4DDBDD4A2726434000248B4A /* ChannelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDBDD482726434000248B4A /* ChannelCollectionViewCell.xib */; };
+		4DDBDD4C2726454900248B4A /* ChnnelDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDBDD4B2726454900248B4A /* ChnnelDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		4DDA6A012725D5F5005151AC /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		4DDA6A022725D5F5005151AC /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		4DDBDD452725DE9200248B4A /* VideoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDataModel.swift; sourceTree = "<group>"; };
+		4DDBDD472726434000248B4A /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DDBDD482726434000248B4A /* ChannelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCollectionViewCell.xib; sourceTree = "<group>"; };
+		4DDBDD4B2726454900248B4A /* ChnnelDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChnnelDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +197,8 @@
 		4DDA6A062725D629005151AC /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				4DDBDD472726434000248B4A /* ChannelCollectionViewCell.swift */,
+				4DDBDD482726434000248B4A /* ChannelCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				4DDBDD452725DE9200248B4A /* VideoDataModel.swift */,
+				4DDBDD4B2726454900248B4A /* ChnnelDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 				4D4F238C271B356900891F28 /* SF-Pro-Display-Semibold.otf in Resources */,
 				4D8DC91B271B527E005E664B /* TabBar.storyboard in Resources */,
 				4D146AF7270CB4930009341B /* Assets.xcassets in Resources */,
+				4DDBDD4A2726434000248B4A /* ChannelCollectionViewCell.xib in Resources */,
 				4D4F2386271B1DDD00891F28 /* SF-Pro-Display-Regular.otf in Resources */,
 				4D146AF5270CB4910009341B /* Main.storyboard in Resources */,
 				4DDA6A042725D5F5005151AC /* VideoTableViewCell.xib in Resources */,
@@ -282,11 +292,13 @@
 			files = (
 				4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */,
 				4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */,
+				4DDBDD492726434000248B4A /* ChannelCollectionViewCell.swift in Sources */,
 				4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */,
 				4D8DC923271B587D005E664B /* PlusVC.swift in Sources */,
 				4D8DC927271B58CD005E664B /* LibraryVC.swift in Sources */,
 				4DDA6A032725D5F5005151AC /* VideoTableViewCell.swift in Sources */,
 				4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */,
+				4DDBDD4C2726454900248B4A /* ChnnelDataModel.swift in Sources */,
 				4DDBDD462725DE9200248B4A /* VideoDataModel.swift in Sources */,
 				4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */,
 				4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */,
