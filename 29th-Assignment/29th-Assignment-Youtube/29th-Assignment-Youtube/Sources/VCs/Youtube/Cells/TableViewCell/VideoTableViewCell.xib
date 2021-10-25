@@ -69,9 +69,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="channelImageView" destination="BFP-6F-Gat" id="1JR-Ud-4lY"/>
                 <outlet property="descriptionLabel" destination="4lO-bS-qm0" id="VFr-iY-Jnm"/>
                 <outlet property="moreMenuButton" destination="if8-MJ-iup" id="F2T-al-qQd"/>
-                <outlet property="profileImageView" destination="BFP-6F-Gat" id="2RY-al-7s0"/>
                 <outlet property="thumbnailImageView" destination="Aiy-XA-Rlc" id="SzD-Gb-VdH"/>
                 <outlet property="titleLabel" destination="Xsw-XZ-Dxc" id="NWe-NM-6MG"/>
             </connections>

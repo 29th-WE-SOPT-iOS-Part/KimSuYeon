@@ -10,7 +10,6 @@ import UIKit
 struct VideoData{
     let thumbnailImageName: String
     let videoTitle: String
-    let description: String
     let channelImageName: String
     
     let channelName: String
