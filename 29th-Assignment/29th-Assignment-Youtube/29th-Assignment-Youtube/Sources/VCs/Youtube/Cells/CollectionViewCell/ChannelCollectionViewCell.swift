@@ -15,13 +15,17 @@ class ChannelCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setUI()
     }
     
     func setData(channelData: ChannelData){
         channelImageView.image = channelData.makeChannelImage()
-        
         channelNameLabel.text = channelData.channelName
+    }
+}
+
+extension ChannelCollectionViewCell {
+    func setUI() {
         channelNameLabel.textColor = UIColor(red: 0.376, green: 0.376, blue: 0.376, alpha: 1)
         channelNameLabel.font = UIFont(name: "SFProDisplay-Regular", size: 12)
     }

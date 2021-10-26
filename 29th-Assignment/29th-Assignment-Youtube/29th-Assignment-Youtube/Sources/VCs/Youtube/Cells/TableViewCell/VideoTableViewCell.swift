@@ -18,7 +18,7 @@ class VideoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,14 +28,18 @@ class VideoTableViewCell: UITableViewCell {
     func setData(videoData: VideoData){
         thumbnailImageView.image = videoData.makeThumbnailImage()
         channelImageView.image = videoData.makeChannelImage()
-        
         titleLabel.text = videoData.videoTitle
+        descriptionLabel.text = "\(videoData.channelName) · 조회수 \(videoData.views)만회 ·  \(videoData.uploadDate) 전"
+    }
+    
+}
+
+extension VideoTableViewCell {
+    func setUI() {
         titleLabel.font = UIFont(name: "SFProDisplay-Regular", size: 15)
         titleLabel.numberOfLines = 0
         
-        descriptionLabel.text = "\(videoData.channelName) · 조회수 \(videoData.views)만회 ·  \(videoData.uploadDate) 전"
         descriptionLabel.textColor = UIColor(red: 0.376, green: 0.376, blue: 0.376, alpha: 1)
         descriptionLabel.font = UIFont(name: "SFProDisplay-Regular", size: 13)
     }
-    
 }
