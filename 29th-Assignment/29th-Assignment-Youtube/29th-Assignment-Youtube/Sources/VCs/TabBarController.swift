@@ -37,7 +37,6 @@ class TabBarController: UITabBarController {
     
     func setTabBarStyle() {
         tabBar.barTintColor = .white
-        tabBar.isTranslucent = false
         tabBar.tintColor = .black
     }
     
