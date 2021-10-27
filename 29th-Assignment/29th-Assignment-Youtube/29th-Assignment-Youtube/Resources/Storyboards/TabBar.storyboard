@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LkA-My-QIv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -102,8 +102,39 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Do-4i-jns">
+                                <rect key="frame" x="0.0" y="193" width="375" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BiV-2w-sJ4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rfl-XY-gfd">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="IeR-zF-ht1" customClass="CategoryCollectionViewCell" customModule="_9th_Assignment_Youtube" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DUQ-g1-9Zc">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="128" height="48"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhx-6B-2cg">
+                                <rect key="frame" x="0.0" y="192" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="9ey-in-C2f"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M7T-JD-gSK">
-                                <rect key="frame" x="0.0" y="192" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="241" width="375" height="537"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -112,18 +143,25 @@
                         <constraints>
                             <constraint firstItem="0yL-k9-LEZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1dE-On-Ady"/>
                             <constraint firstItem="M7T-JD-gSK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5rR-9y-9hm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mhx-6B-2cg" secondAttribute="trailing" id="6rg-op-y4X"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="M7T-JD-gSK" secondAttribute="bottom" id="7fh-ZI-JTV"/>
+                            <constraint firstItem="Mhx-6B-2cg" firstAttribute="top" secondItem="yq4-8M-GYS" secondAttribute="bottom" id="9Iu-8h-Aa9"/>
+                            <constraint firstItem="Mhx-6B-2cg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BEg-6W-uK1"/>
+                            <constraint firstItem="0Do-4i-jns" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EBl-Em-QnH"/>
                             <constraint firstItem="yq4-8M-GYS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LN0-Se-bRS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yq4-8M-GYS" secondAttribute="trailing" id="SNx-gr-DUB"/>
                             <constraint firstItem="yq4-8M-GYS" firstAttribute="top" secondItem="0yL-k9-LEZ" secondAttribute="bottom" id="Xum-wI-QSB"/>
-                            <constraint firstItem="M7T-JD-gSK" firstAttribute="top" secondItem="yq4-8M-GYS" secondAttribute="bottom" id="Yun-63-lfe"/>
                             <constraint firstItem="0yL-k9-LEZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fJF-US-L1E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0Do-4i-jns" secondAttribute="trailing" id="g95-eg-Yrg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M7T-JD-gSK" secondAttribute="trailing" id="ig6-5Z-psG"/>
+                            <constraint firstItem="M7T-JD-gSK" firstAttribute="top" secondItem="0Do-4i-jns" secondAttribute="bottom" id="kwq-Uz-LPz"/>
+                            <constraint firstItem="0Do-4i-jns" firstAttribute="top" secondItem="Mhx-6B-2cg" secondAttribute="bottom" id="s3W-sj-ORR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0yL-k9-LEZ" secondAttribute="trailing" id="vd8-Qg-Kav"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="QqS-QX-AJy"/>
                     <connections>
+                        <outlet property="categoryCollectionView" destination="0Do-4i-jns" id="eN7-E9-0dl"/>
                         <outlet property="channelCollectionView" destination="yq4-8M-GYS" id="3rB-nf-FeN"/>
                         <outlet property="notificationButton" destination="AVm-4K-Zq7" id="EQG-MY-kML"/>
                         <outlet property="profileButton" destination="PrQ-HO-fCy" id="6eN-Kw-pdv"/>
@@ -134,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1532" y="830.54187192118229"/>
+            <point key="canvasLocation" x="-1046" y="831"/>
         </scene>
         <!--Item-->
         <scene sceneID="aSs-iU-jmi">
@@ -151,6 +189,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lK0-Qh-dp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-239" y="832"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="48t-Y2-eZK">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="GoD-bi-zGI" customClass="TabBarController" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hfa-PN-BFY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBd-Vv-KVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="11"/>
         </scene>
         <!--Item-->
         <scene sceneID="UEf-jk-6nA">
@@ -199,21 +251,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOS-Qc-qeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2081" y="832"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="eJz-8I-UlU">
-            <objects>
-                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="LkA-My-QIv" customClass="TabBarController" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Jx-a7-evv">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EuH-Gl-8bI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="541" y="42"/>
         </scene>
     </scenes>
     <resources>
