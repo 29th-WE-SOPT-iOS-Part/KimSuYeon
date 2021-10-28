@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,9 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aiy-XA-Rlc">
+                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wesoptDesignPart" translatesAutoresizingMaskIntoConstraints="NO" id="Aiy-XA-Rlc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="375" id="Dew-0K-MIF"/>
                             <constraint firstAttribute="height" constant="212" id="eVV-sa-XvP"/>
                         </constraints>
                     </imageView>
@@ -50,7 +51,9 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Aiy-XA-Rlc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2bb-2X-iNY"/>
                     <constraint firstItem="BFP-6F-Gat" firstAttribute="top" secondItem="Aiy-XA-Rlc" secondAttribute="bottom" constant="11" id="7yc-SD-QXV"/>
+                    <constraint firstAttribute="trailing" secondItem="Aiy-XA-Rlc" secondAttribute="trailing" id="9dP-8J-abi"/>
                     <constraint firstItem="4lO-bS-qm0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="Fp6-k3-ybl"/>
                     <constraint firstAttribute="trailing" secondItem="4lO-bS-qm0" secondAttribute="trailing" constant="45" id="GTz-X2-JNi"/>
                     <constraint firstItem="4lO-bS-qm0" firstAttribute="top" secondItem="Xsw-XZ-Dxc" secondAttribute="bottom" constant="4" id="HRS-2S-WwI"/>
@@ -58,11 +61,9 @@
                     <constraint firstItem="if8-MJ-iup" firstAttribute="leading" secondItem="Xsw-XZ-Dxc" secondAttribute="trailing" constant="19" id="Jsh-wp-cvi"/>
                     <constraint firstItem="Xsw-XZ-Dxc" firstAttribute="top" secondItem="Aiy-XA-Rlc" secondAttribute="bottom" constant="12" id="Pi3-vR-4nF"/>
                     <constraint firstItem="BFP-6F-Gat" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Qrl-XG-WLA"/>
-                    <constraint firstItem="Aiy-XA-Rlc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tip-U8-c6p"/>
                     <constraint firstAttribute="bottom" secondItem="if8-MJ-iup" secondAttribute="bottom" constant="61" id="Vaj-vn-VCN"/>
-                    <constraint firstItem="Aiy-XA-Rlc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XAd-e2-vKk"/>
-                    <constraint firstAttribute="trailing" secondItem="Aiy-XA-Rlc" secondAttribute="trailing" id="XYv-az-Unr"/>
                     <constraint firstAttribute="trailing" secondItem="if8-MJ-iup" secondAttribute="trailing" id="n3o-Re-T1I"/>
+                    <constraint firstItem="Aiy-XA-Rlc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="x3y-MU-gq5"/>
                     <constraint firstAttribute="bottom" secondItem="BFP-6F-Gat" secondAttribute="bottom" constant="47" id="yyJ-0W-Op5"/>
                     <constraint firstItem="if8-MJ-iup" firstAttribute="top" secondItem="Aiy-XA-Rlc" secondAttribute="bottom" constant="7" id="zU9-0W-uf6"/>
                 </constraints>
@@ -80,5 +81,6 @@
     </objects>
     <resources>
         <image name="moreMenuIcon" width="26" height="26"/>
+        <image name="wesoptDesignPart" width="375" height="212"/>
     </resources>
 </document>

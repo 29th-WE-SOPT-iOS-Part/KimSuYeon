@@ -101,9 +101,6 @@ extension HomeVC: UITableViewDelegate{
 extension HomeVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == categoryCollectionView {
-            //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
-//            return CGSize(width: cell.getEstimatedWidthFromDummyCell(), height: 32)
-//            return cell.fittingSize(category: categoryList[indexPath.row])
             return CGSize(width: categoryList[indexPath.item].size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width + 20, height: 32)
             
         } else {

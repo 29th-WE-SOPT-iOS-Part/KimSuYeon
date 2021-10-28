@@ -36,6 +36,7 @@ class VideoTableViewCell: UITableViewCell {
 
 extension VideoTableViewCell {
     func setUI() {
+        thumbnailImageView.contentMode = .scaleToFill
         titleLabel.font = UIFont(name: "SFProDisplay-Regular", size: 15)
         titleLabel.numberOfLines = 0
         
