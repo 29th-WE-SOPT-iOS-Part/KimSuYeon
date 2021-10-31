@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="165" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
-                        <color key="highlightedColor" red="0.32802224159999999" green="0.29653412099999998" blue="0.5910113454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </label>
                 </subviews>
             </view>
