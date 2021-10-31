@@ -99,6 +99,7 @@ extension HomeVC: UITableViewDelegate{
 }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout{
+    // sizeForItemAt
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == categoryCollectionView {
             return CGSize(width: categoryList[indexPath.item].size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width + 20, height: 32)
@@ -108,6 +109,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
         }
     }
     
+    // insetForSectionAt
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == categoryCollectionView {
             return UIEdgeInsets.init(top: 0, left: 13, bottom: 0, right: 13)
@@ -116,11 +118,13 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
         }
     }
     
+    // minLineSpacing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             return 0
         
     }
     
+    // minInteritemSpacing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == categoryCollectionView {
             return 9
@@ -131,6 +135,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
 }
 
 extension HomeVC: UICollectionViewDataSource{
+    // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == categoryCollectionView{
             return categoryList.count
@@ -139,6 +144,7 @@ extension HomeVC: UICollectionViewDataSource{
         }
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == categoryCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as? CategoryCollectionViewCell else {return UICollectionViewCell()}
