@@ -17,12 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yL-k9-LEZ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yL-k9-LEZ" customClass="CustomNavigationBar" customModule="_9th_Assignment_Youtube" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtubelogo" translatesAutoresizingMaskIntoConstraints="NO" id="6r6-4C-Qlc">
-                                        <rect key="frame" x="16" y="11" width="83" height="20"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txs-rx-Bde">
                                         <rect key="frame" x="186" y="6" width="32" height="32"/>
                                         <constraints>
@@ -58,7 +55,6 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="txs-rx-Bde" firstAttribute="leading" secondItem="6r6-4C-Qlc" secondAttribute="trailing" constant="87" id="4cy-96-NNi"/>
                                     <constraint firstAttribute="height" constant="44" id="6NH-kD-i29"/>
                                     <constraint firstAttribute="bottom" secondItem="AVm-4K-Zq7" secondAttribute="bottom" constant="7" id="6aP-WY-yb8"/>
                                     <constraint firstAttribute="trailing" secondItem="PrQ-HO-fCy" secondAttribute="trailing" constant="16" id="Lnz-b5-ssz"/>
@@ -66,11 +62,8 @@
                                     <constraint firstItem="B5n-0L-0Ki" firstAttribute="top" secondItem="0yL-k9-LEZ" secondAttribute="top" constant="5" id="R60-g9-LCm"/>
                                     <constraint firstItem="B5n-0L-0Ki" firstAttribute="leading" secondItem="AVm-4K-Zq7" secondAttribute="trailing" constant="18" id="RnE-0v-rG8"/>
                                     <constraint firstItem="AVm-4K-Zq7" firstAttribute="leading" secondItem="txs-rx-Bde" secondAttribute="trailing" constant="18" id="SBO-3l-fHc"/>
-                                    <constraint firstItem="6r6-4C-Qlc" firstAttribute="leading" secondItem="0yL-k9-LEZ" secondAttribute="leading" constant="16" id="SzG-wF-sao"/>
                                     <constraint firstAttribute="bottom" secondItem="PrQ-HO-fCy" secondAttribute="bottom" constant="10" id="U8F-K3-UW3"/>
-                                    <constraint firstItem="6r6-4C-Qlc" firstAttribute="top" secondItem="0yL-k9-LEZ" secondAttribute="top" constant="11" id="Uu9-Ap-2KN"/>
                                     <constraint firstItem="PrQ-HO-fCy" firstAttribute="leading" secondItem="B5n-0L-0Ki" secondAttribute="trailing" constant="17" id="UyT-MN-Tzy"/>
-                                    <constraint firstAttribute="bottom" secondItem="6r6-4C-Qlc" secondAttribute="bottom" constant="13" id="cfG-fZ-MGJ"/>
                                     <constraint firstAttribute="bottom" secondItem="txs-rx-Bde" secondAttribute="bottom" constant="6" id="g2Z-cp-ZYJ"/>
                                     <constraint firstItem="txs-rx-Bde" firstAttribute="top" secondItem="0yL-k9-LEZ" secondAttribute="top" constant="6" id="gGT-k1-CoT"/>
                                     <constraint firstItem="PrQ-HO-fCy" firstAttribute="top" secondItem="0yL-k9-LEZ" secondAttribute="top" constant="10" id="mSy-Ru-Vqp"/>
@@ -184,8 +177,22 @@
                     <view key="view" contentMode="scaleToFill" id="93o-VU-OES" customClass="Shorts">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-eS-zyf" customClass="CustomNavigationBar" customModule="_9th_Assignment_Youtube" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="th3-yS-iwl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Tfs-qu-8bR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LCY-eS-zyf" firstAttribute="trailing" secondItem="Tfs-qu-8bR" secondAttribute="trailing" id="PIw-dG-7AQ"/>
+                            <constraint firstItem="LCY-eS-zyf" firstAttribute="top" secondItem="Tfs-qu-8bR" secondAttribute="top" id="Yge-5K-Q8A"/>
+                            <constraint firstItem="LCY-eS-zyf" firstAttribute="leading" secondItem="Tfs-qu-8bR" secondAttribute="leading" id="y7L-Nn-oCe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="PFB-Wu-AWB"/>
                 </viewController>
@@ -261,7 +268,6 @@
         <image name="notificationIcon" width="32.333332061767578" height="32"/>
         <image name="wesoptProfile" width="36" height="36"/>
         <image name="windowSharingIcon" width="32.333332061767578" height="32"/>
-        <image name="youtubelogo" width="96.333335876464844" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

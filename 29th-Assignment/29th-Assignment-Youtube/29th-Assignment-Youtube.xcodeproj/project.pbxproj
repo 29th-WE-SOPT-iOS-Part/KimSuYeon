@@ -12,6 +12,8 @@
 		4D146AF5270CB4910009341B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF3270CB4910009341B /* Main.storyboard */; };
 		4D146AF7270CB4930009341B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF6270CB4930009341B /* Assets.xcassets */; };
 		4D146AFA270CB4930009341B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D146AF8270CB4930009341B /* LaunchScreen.storyboard */; };
+		4D206C44272FF2F6005AC655 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D206C43272FF2F6005AC655 /* CustomNavigationBar.swift */; };
+		4D206C46272FF30E005AC655 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D206C45272FF30E005AC655 /* CustomNavigationBar.xib */; };
 		4D4F2386271B1DDD00891F28 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */; };
 		4D4F2388271B20EC00891F28 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */; };
 		4D4F238A271B354600891F28 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */; };
@@ -44,6 +46,8 @@
 		4D146AF6270CB4930009341B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D146AF9270CB4930009341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D146AFB270CB4930009341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D206C43272FF2F6005AC655 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		4D206C45272FF30E005AC655 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
 		4D4F2385271B1DDD00891F28 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		4D4F2387271B20EC00891F28 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		4D4F2389271B354500891F28 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -106,6 +110,27 @@
 			path = "29th-Assignment-Youtube";
 			sourceTree = "<group>";
 		};
+		4D206C40272EA473005AC655 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				4D8DC91E271B5843005E664B /* HomeVC.swift */,
+				4D8DC920271B5865005E664B /* ShortsVC.swift */,
+				4D8DC922271B587D005E664B /* PlusVC.swift */,
+				4D8DC924271B58A9005E664B /* SubscriptionVC.swift */,
+				4D8DC926271B58CD005E664B /* LibraryVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		4D206C42272FF2CD005AC655 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D206C43272FF2F6005AC655 /* CustomNavigationBar.swift */,
+				4D206C45272FF30E005AC655 /* CustomNavigationBar.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4D8DC929271B67E6005E664B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,19 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				4DDBDD442725DE7000248B4A /* Models */,
-				4D8DC92B271B683B005E664B /* VCs */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		4D8DC92B271B683B005E664B /* VCs */ = {
-			isa = PBXGroup;
-			children = (
-				4D8DC91C271B56E8005E664B /* TabBarController.swift */,
 				4DDA69FE2725D514005151AC /* Login */,
 				4DDA69FF2725D52E005151AC /* Youtube */,
 			);
-			path = VCs;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		4D8DC92C271B687F005E664B /* Storyboards */ = {
@@ -170,14 +186,13 @@
 		4DDA69FF2725D52E005151AC /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				4D8DC91C271B56E8005E664B /* TabBarController.swift */,
+				4D206C42272FF2CD005AC655 /* View */,
+				4D206C40272EA473005AC655 /* VCs */,
 				4DDA6A002725D5B0005151AC /* Cells */,
-				4D8DC91E271B5843005E664B /* HomeVC.swift */,
-				4D8DC920271B5865005E664B /* ShortsVC.swift */,
-				4D8DC922271B587D005E664B /* PlusVC.swift */,
-				4D8DC924271B58A9005E664B /* SubscriptionVC.swift */,
-				4D8DC926271B58CD005E664B /* LibraryVC.swift */,
 			);
-			path = Youtube;
+			name = Youtube;
+			path = VCs/Youtube;
 			sourceTree = "<group>";
 		};
 		4DDA6A002725D5B0005151AC /* Cells */ = {
@@ -276,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D206C46272FF30E005AC655 /* CustomNavigationBar.xib in Resources */,
 				4D4F238A271B354600891F28 /* SF-Pro-Display-Medium.otf in Resources */,
 				4D146AFA270CB4930009341B /* LaunchScreen.storyboard in Resources */,
 				4D4F2388271B20EC00891F28 /* SF-Pro-Display-Bold.otf in Resources */,
@@ -309,6 +325,7 @@
 				4DDBDD4C2726454900248B4A /* ChnnelDataModel.swift in Sources */,
 				4DDBDD462725DE9200248B4A /* VideoDataModel.swift in Sources */,
 				4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */,
+				4D206C44272FF2F6005AC655 /* CustomNavigationBar.swift in Sources */,
 				4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */,
 				4D8DC921271B5865005E664B /* ShortsVC.swift in Sources */,
 				4D146AF0270CB4910009341B /* SceneDelegate.swift in Sources */,
