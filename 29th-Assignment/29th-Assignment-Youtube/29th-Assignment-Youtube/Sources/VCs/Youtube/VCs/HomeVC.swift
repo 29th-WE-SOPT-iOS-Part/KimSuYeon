@@ -9,11 +9,8 @@ import UIKit
 
 class HomeVC: UIViewController {
 
-    @IBOutlet weak var windowSharingButton: UIButton!
-    @IBOutlet weak var notificationButton: UIButton!
-    @IBOutlet weak var searchButton: UIButton!
-    @IBOutlet weak var profileButton: UIButton!
     
+    @IBOutlet weak var customNavigationBar: CustomNavigationBar!
     @IBOutlet weak var channelCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var videoTableView: UITableView!
@@ -28,6 +25,9 @@ class HomeVC: UIViewController {
         
         setTableView()
         setCollectionView()
+        
+        customNavigationBar.delegate = self
+        //customNavigationBar.parentViewController = self
     }
     
     func initDataList(){
@@ -76,7 +76,6 @@ class HomeVC: UIViewController {
         let categoryXib = UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil)
         categoryCollectionView.register(categoryXib, forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
     }
-    
 }
 
 extension HomeVC: UITableViewDataSource{
