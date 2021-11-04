@@ -26,6 +26,7 @@
 		4D7EF23F2732BBD800E26AD9 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF23E2732BBD800E26AD9 /* NetworkResult.swift */; };
 		4D7EF2412732BC4A00E26AD9 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2402732BC4A00E26AD9 /* LoginResponseDataModel.swift */; };
 		4D7EF2432732BCA500E26AD9 /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2422732BCA500E26AD9 /* UserSignService.swift */; };
+		4D7EF2462734308700E26AD9 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2452734308700E26AD9 /* UIViewController + Extension.swift */; };
 		4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInVC.swift */; };
 		4D8DC91B271B527E005E664B /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8DC91A271B527E005E664B /* TabBar.storyboard */; };
 		4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8DC91C271B56E8005E664B /* TabBarController.swift */; };
@@ -65,6 +66,7 @@
 		4D7EF23E2732BBD800E26AD9 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		4D7EF2402732BC4A00E26AD9 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
 		4D7EF2422732BCA500E26AD9 /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
+		4D7EF2452734308700E26AD9 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		4D8D0373270CBC4A00824081 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		4D8DC91A271B527E005E664B /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		4D8DC91C271B56E8005E664B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -160,9 +162,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4D7EF24427342FF700E26AD9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D7EF2452734308700E26AD9 /* UIViewController + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4D8DC929271B67E6005E664B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D7EF24427342FF700E26AD9 /* Extension */,
 				4D8DC92C271B687F005E664B /* Storyboards */,
 				4D146AEF270CB4910009341B /* SceneDelegate.swift */,
 				4D146AED270CB4910009341B /* AppDelegate.swift */,
@@ -397,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DDBDD4F27265AAF00248B4A /* CategoryCollectionViewCell.swift in Sources */,
+				4D7EF2462734308700E26AD9 /* UIViewController + Extension.swift in Sources */,
 				4D7EF23B2732B31000E26AD9 /* NavigtaionController.swift in Sources */,
 				4D7EF2412732BC4A00E26AD9 /* LoginResponseDataModel.swift in Sources */,
 				4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */,
