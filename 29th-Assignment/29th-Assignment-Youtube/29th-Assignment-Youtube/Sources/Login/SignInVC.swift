@@ -57,11 +57,7 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: UIButton) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-        
-        welcomeVC.userName = nameTextField.text
-        welcomeVC.modalPresentationStyle = .fullScreen
-        self.present(welcomeVC, animated: true, completion: nil)
+        requestLogin()
     }
 }
 
@@ -84,5 +80,44 @@ extension SignInVC: UITextFieldDelegate {
         default: break
         }
         return true
+    }
+}
+
+extension SignInVC {
+    // Networking Alert
+    func simpleAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default) { (action) in
+            guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+            
+            welcomeVC.userName = self.nameTextField.text
+            welcomeVC.modalPresentationStyle = .fullScreen
+            self.present(welcomeVC, animated: true, completion: nil)
+        }
+        
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    } // 성공, 실패 alert 분기처리 어케 하징
+    
+    func requestLogin(){
+        UserSignService.shared.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
+            switch reponseData {
+            case .success(let loginResponse):
+                guard let response = loginResponse as? LoginResponseData else { return }
+                if response.data != nil {
+                    self.simpleAlert(title: "로그인", message: response.message)
+                }
+            case .requestErr(let msg):
+                print("requestERR \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }

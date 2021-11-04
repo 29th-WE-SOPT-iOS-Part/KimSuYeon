@@ -8,6 +8,9 @@
 import UIKit
 
 class CustomNavigationBar: UIView {
+    
+    @IBOutlet weak var profileButton: UIButton!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         customInit()
@@ -23,5 +26,9 @@ class CustomNavigationBar: UIView {
             view.frame = self.bounds
             addSubview(view)
         }
+    }
+    
+    @IBAction func profileButtonDidTab(_ sender: Any) {
+        
     }
 }
