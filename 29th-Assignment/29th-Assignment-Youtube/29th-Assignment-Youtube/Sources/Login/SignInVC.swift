@@ -85,7 +85,7 @@ extension SignInVC: UITextFieldDelegate {
 
 extension SignInVC {
     // Networking Alert
-    func simpleAlert(title: String, message: String) {
+    func successAlert(title: String, message: String) {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: .alert)
@@ -99,7 +99,17 @@ extension SignInVC {
         
         alert.addAction(okAction)
         present(alert, animated: true)
-    } // 성공, 실패 alert 분기처리 어케 하징
+    }
+    
+    func failAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default)
+        
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
     
     func requestLogin(){
         UserSignService.shared.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
@@ -107,12 +117,16 @@ extension SignInVC {
             case .success(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else { return }
                 if response.data != nil {
-                    self.simpleAlert(title: "로그인", message: response.message)
+                    self.successAlert(title: "로그인", message: response.message)
                 }
             case .requestErr(let msg):
                 print("requestERR \(msg)")
-            case .pathErr:
+                guard let response = msg as? LoginResponseData else { return }
+                self.failAlert(title: "로그인", message: response.message)
+            case .pathErr(let msg):
                 print("pathErr")
+                guard let response = msg as? LoginResponseData else { return }
+                self.failAlert(title: "로그인", message: response.message)
             case .serverErr:
                 print("serverErr")
             case .networkFail:

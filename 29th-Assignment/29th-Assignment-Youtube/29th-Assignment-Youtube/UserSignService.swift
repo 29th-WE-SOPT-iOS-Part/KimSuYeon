@@ -51,7 +51,7 @@ struct UserSignService{
     private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode{
         case 200: return isVaildLoginData(data: data)
-        case 400: return .pathErr
+        case 400: return isPathErr(data: data)
         case 500: return .serverErr
         default: return .networkFail
         }
@@ -61,8 +61,16 @@ struct UserSignService{
     private func isVaildLoginData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data)
-        else {return .pathErr}
+        else { return .pathErr(data) }
         return .success(decodedData)
+    }
+    
+    private func isPathErr(data: Data) -> NetworkResult<Any> {
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data)
+        else { return .pathErr(data)}
+        return .pathErr(decodedData)
+        
     }
     
     func signUp(email: String,
@@ -106,7 +114,7 @@ struct UserSignService{
     private func judgeSignUpStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode{
         case 200: return isVaildSignUpData(data: data)
-        case 400: return .pathErr
+        case 400: return isSignUpPathErr(data: data)
         case 500: return .serverErr
         default: return .networkFail
         }
@@ -116,8 +124,14 @@ struct UserSignService{
     private func isVaildSignUpData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(SignUpResponseData.self, from: data)
-        else {return .pathErr}
+        else {return .pathErr(data)}
         return .success(decodedData)
     }
     
+    private func isSignUpPathErr(data: Data) -> NetworkResult<Any> {
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data)
+        else { return .pathErr(data)}
+        return .pathErr(decodedData)
+    }
 }
