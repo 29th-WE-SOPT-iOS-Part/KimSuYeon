@@ -65,12 +65,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-        
-        welcomeVC.userName = nameTextField.text
-        welcomeVC.modalPresentationStyle = .fullScreen
-        self.present(welcomeVC, animated: true, completion: nil)
-        
+        requestSignUp()
     }
 }
 
@@ -93,5 +88,58 @@ extension SignUpVC: UITextFieldDelegate {
         default: break
         }
         return true
+    }
+}
+
+extension SignUpVC {
+    // Networking Alert
+    func successAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default) { (action) in
+            guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+            
+            welcomeVC.userName = self.nameTextField.text
+            welcomeVC.modalPresentationStyle = .fullScreen
+            self.present(welcomeVC, animated: true, completion: nil)
+        }
+        
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+    
+    func failAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default)
+        
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+    
+    func requestSignUp(){
+        UserSignService.shared.signUp(email: emailTextField.text ?? "", name: nameTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
+            switch reponseData {
+            case .success(let signUpResponse):
+                guard let response = signUpResponse as? SignUpResponseData else { return }
+                if response.data != nil {
+                    self.successAlert(title: "회원가입", message: response.message)
+                }
+            case .requestErr(let msg):
+                print("requestERR \(msg)")
+                guard let response = msg as? LoginResponseData else { return }
+                self.failAlert(title: "회원가입", message: response.message)
+            case .pathErr(let msg):
+                print("pathErr")
+                guard let response = msg as? LoginResponseData else { return }
+                self.failAlert(title: "회원가입", message: response.message)
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }
