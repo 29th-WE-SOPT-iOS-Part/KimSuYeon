@@ -59,6 +59,7 @@ struct UserSignUpService{
     }
     
     // 정말 원하는 데이터가 들어왔을 때, 데이터 처리를 위한 함수
+    // 📌 PR : case 400 일때 처리하는 함수를 똑같이 만들어줬는데 더 좋은 방법이 있을까요?
     private func isVaildSignUpData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(SignUpResponseData.self, from: data)
