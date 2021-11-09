@@ -93,11 +93,12 @@ extension SignUpVC: UITextFieldDelegate {
 
 extension SignUpVC {
     func requestSignUp(){
-        UserSignService.shared.signUp(email: emailTextField.text ?? "", name: nameTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
+        UserSignUpService.shared.signUp(email: emailTextField.text ?? "", name: nameTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
             switch reponseData {
             case .success(let signUpResponse):
                 guard let response = signUpResponse as? SignUpResponseData else { return }
                 if response.data != nil {
+                    UserDefaults.standard.set(self.nameTextField.text, forKey: "userName")
                     self.successAlert(title: "회원가입", message: response.message)
                 }
             case .requestErr(let msg):

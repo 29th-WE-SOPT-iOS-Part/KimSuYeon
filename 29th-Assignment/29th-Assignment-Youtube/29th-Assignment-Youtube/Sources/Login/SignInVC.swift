@@ -84,13 +84,14 @@ extension SignInVC: UITextFieldDelegate {
 }
 
 extension SignInVC {
-    // Networking Alert
+    // 📌 PR : 이부분 이렇게 하눈게 맞눈곤지,,,
     func requestLogin(){
-        UserSignService.shared.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
+        UserSignInService.shared.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
             switch reponseData {
             case .success(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else { return }
                 if response.data != nil {
+                    UserDefaults.standard.set(self.nameTextField.text, forKey: "userName")
                     self.successAlert(title: "로그인", message: response.message)
                 }
             case .requestErr(let msg):
