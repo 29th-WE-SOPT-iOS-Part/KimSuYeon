@@ -21,11 +21,14 @@
 		4D4F238C271B356900891F28 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */; };
 		4D619B60270CC0B4009916EC /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B5F270CC0B4009916EC /* SignUpVC.swift */; };
 		4D619B62270CC0E1009916EC /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D619B61270CC0E1009916EC /* WelcomeVC.swift */; };
+		4D71AE7E273A5B0E00DCE404 /* SignUpResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71AE7D273A5B0D00DCE404 /* SignUpResponseDataModel.swift */; };
+		4D71AE80273A5B6500DCE404 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71AE7F273A5B6500DCE404 /* UIViewController+alert.swift */; };
+		4D71AE83273A5C9E00DCE404 /* UserSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71AE82273A5C9E00DCE404 /* UserSignUpService.swift */; };
 		4D7EF23B2732B31000E26AD9 /* NavigtaionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF23A2732B31000E26AD9 /* NavigtaionController.swift */; };
 		4D7EF23D2732BB7500E26AD9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF23C2732BB7500E26AD9 /* APIConstants.swift */; };
 		4D7EF23F2732BBD800E26AD9 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF23E2732BBD800E26AD9 /* NetworkResult.swift */; };
 		4D7EF2412732BC4A00E26AD9 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2402732BC4A00E26AD9 /* LoginResponseDataModel.swift */; };
-		4D7EF2432732BCA500E26AD9 /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2422732BCA500E26AD9 /* UserSignService.swift */; };
+		4D7EF2432732BCA500E26AD9 /* UserSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2422732BCA500E26AD9 /* UserSignInService.swift */; };
 		4D7EF2462734308700E26AD9 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EF2452734308700E26AD9 /* UIViewController + Extension.swift */; };
 		4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8D0373270CBC4A00824081 /* SignInVC.swift */; };
 		4D8DC91B271B527E005E664B /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8DC91A271B527E005E664B /* TabBar.storyboard */; };
@@ -61,11 +64,14 @@
 		4D4F238B271B356900891F28 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		4D619B5F270CC0B4009916EC /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		4D619B61270CC0E1009916EC /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		4D71AE7D273A5B0D00DCE404 /* SignUpResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponseDataModel.swift; sourceTree = "<group>"; };
+		4D71AE7F273A5B6500DCE404 /* UIViewController+alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		4D71AE82273A5C9E00DCE404 /* UserSignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpService.swift; sourceTree = "<group>"; };
 		4D7EF23A2732B31000E26AD9 /* NavigtaionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigtaionController.swift; sourceTree = "<group>"; };
 		4D7EF23C2732BB7500E26AD9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		4D7EF23E2732BBD800E26AD9 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		4D7EF2402732BC4A00E26AD9 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
-		4D7EF2422732BCA500E26AD9 /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
+		4D7EF2422732BCA500E26AD9 /* UserSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignInService.swift; sourceTree = "<group>"; };
 		4D7EF2452734308700E26AD9 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		4D8D0373270CBC4A00824081 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		4D8DC91A271B527E005E664B /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
@@ -133,10 +139,6 @@
 				4D8DC929271B67E6005E664B /* Resources */,
 				4D8DC92A271B6825005E664B /* Sources */,
 				4D146AFB270CB4930009341B /* Info.plist */,
-				4D7EF23C2732BB7500E26AD9 /* APIConstants.swift */,
-				4D7EF23E2732BBD800E26AD9 /* NetworkResult.swift */,
-				4D7EF2402732BC4A00E26AD9 /* LoginResponseDataModel.swift */,
-				4D7EF2422732BCA500E26AD9 /* UserSignService.swift */,
 			);
 			path = "29th-Assignment-Youtube";
 			sourceTree = "<group>";
@@ -162,10 +164,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4D71AE7C273A5A7C00DCE404 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D7EF23C2732BB7500E26AD9 /* APIConstants.swift */,
+				4D7EF23E2732BBD800E26AD9 /* NetworkResult.swift */,
+				4D7EF2402732BC4A00E26AD9 /* LoginResponseDataModel.swift */,
+				4D71AE7D273A5B0D00DCE404 /* SignUpResponseDataModel.swift */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		4D71AE81273A5C2400DCE404 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				4D7EF2422732BCA500E26AD9 /* UserSignInService.swift */,
+				4D71AE82273A5C9E00DCE404 /* UserSignUpService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		4D7EF24427342FF700E26AD9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				4D7EF2452734308700E26AD9 /* UIViewController + Extension.swift */,
+				4D71AE7F273A5B6500DCE404 /* UIViewController+alert.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -186,6 +209,8 @@
 		4D8DC92A271B6825005E664B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4D71AE7C273A5A7C00DCE404 /* NetworkModel */,
+				4D71AE81273A5C2400DCE404 /* NetworkService */,
 				4DDBDD442725DE7000248B4A /* Models */,
 				4DDA69FE2725D514005151AC /* Login */,
 				4DDA69FF2725D52E005151AC /* Youtube */,
@@ -407,9 +432,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D71AE7E273A5B0E00DCE404 /* SignUpResponseDataModel.swift in Sources */,
 				4DDBDD4F27265AAF00248B4A /* CategoryCollectionViewCell.swift in Sources */,
 				4D7EF2462734308700E26AD9 /* UIViewController + Extension.swift in Sources */,
 				4D7EF23B2732B31000E26AD9 /* NavigtaionController.swift in Sources */,
+				4D71AE80273A5B6500DCE404 /* UIViewController+alert.swift in Sources */,
 				4D7EF2412732BC4A00E26AD9 /* LoginResponseDataModel.swift in Sources */,
 				4D8D0374270CBC4A00824081 /* SignInVC.swift in Sources */,
 				4D8DC91F271B5843005E664B /* HomeVC.swift in Sources */,
@@ -421,7 +448,8 @@
 				4DDA6A032725D5F5005151AC /* VideoTableViewCell.swift in Sources */,
 				4D146AEE270CB4910009341B /* AppDelegate.swift in Sources */,
 				4D7EF23F2732BBD800E26AD9 /* NetworkResult.swift in Sources */,
-				4D7EF2432732BCA500E26AD9 /* UserSignService.swift in Sources */,
+				4D71AE83273A5C9E00DCE404 /* UserSignUpService.swift in Sources */,
+				4D7EF2432732BCA500E26AD9 /* UserSignInService.swift in Sources */,
 				4DDBDD4C2726454900248B4A /* ChnnelDataModel.swift in Sources */,
 				4DDBDD462725DE9200248B4A /* VideoDataModel.swift in Sources */,
 				4D8DC91D271B56E8005E664B /* TabBarController.swift in Sources */,
