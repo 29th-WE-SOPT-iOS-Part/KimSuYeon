@@ -69,6 +69,6 @@ struct UserSignInService{
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data)
         else { return .pathErr(data)}
-        return .pathErr(decodedData)
+        return .requestErr(decodedData)
     }
 }

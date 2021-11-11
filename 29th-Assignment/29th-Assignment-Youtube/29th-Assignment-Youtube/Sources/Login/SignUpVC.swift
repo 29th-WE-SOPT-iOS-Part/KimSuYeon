@@ -98,17 +98,26 @@ extension SignUpVC {
             case .success(let signUpResponse):
                 guard let response = signUpResponse as? SignUpResponseData else { return }
                 if response.data != nil {
-                    UserDefaults.standard.set(self.nameTextField.text, forKey: "userName")
-                    self.successAlert(title: "회원가입", message: response.message)
+                    UserDefaults.standard.set(self.nameTextField.text, forKey: UserDefaults.Keys.loginUserName)
+                    self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
+                        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+                        
+                        welcomeVC.modalPresentationStyle = .fullScreen
+                        self.present(welcomeVC, animated: true, completion: nil)
+                    })
                 }
-            case .requestErr(let msg):
-                print("requestERR \(msg)")
-                guard let response = msg as? LoginResponseData else { return }
-                self.failAlert(title: "회원가입", message: response.message)
+            case .requestErr(let loginResponse):
+                guard let response = loginResponse as? LoginResponseData else { return }
+                print("requestERR \(response.message)")
+                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+                    self.setTextFieldEmpty()
+                })
             case .pathErr(let msg):
                 print("pathErr")
                 guard let response = msg as? LoginResponseData else { return }
-                self.failAlert(title: "회원가입", message: response.message)
+                self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
+                    self.setTextFieldEmpty()
+                })
             case .serverErr:
                 print("serverErr")
             case .networkFail:

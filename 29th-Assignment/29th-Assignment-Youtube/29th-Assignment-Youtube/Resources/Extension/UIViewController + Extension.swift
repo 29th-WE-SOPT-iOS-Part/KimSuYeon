@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController: CustomViewDelegate {
     func touchUpToGoLogin() {
-        guard let naviVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationController") as? NavigationController else { return }
+        guard let naviVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController else { return }
         
         naviVC.modalPresentationStyle = .fullScreen
         naviVC.modalTransitionStyle = .crossDissolve
