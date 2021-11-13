@@ -65,12 +65,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-        
-        welcomeVC.userName = nameTextField.text
-        welcomeVC.modalPresentationStyle = .fullScreen
-        self.present(welcomeVC, animated: true, completion: nil)
-        
+        requestSignUp()
     }
 }
 
@@ -93,5 +88,41 @@ extension SignUpVC: UITextFieldDelegate {
         default: break
         }
         return true
+    }
+}
+
+extension SignUpVC {
+    func requestSignUp(){
+        UserSignUpService.shared.signUp(email: emailTextField.text ?? "", name: nameTextField.text ?? "" , password: passwordTextField.text ?? "") { reponseData in
+            switch reponseData {
+            case .success(let signUpResponse):
+                guard let response = signUpResponse as? SignUpResponseData else { return }
+                if response.data != nil {
+                    UserDefaults.standard.set(self.nameTextField.text, forKey: UserDefaults.Keys.loginUserName)
+                    self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
+                        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+                        
+                        welcomeVC.modalPresentationStyle = .fullScreen
+                        self.present(welcomeVC, animated: true, completion: nil)
+                    })
+                }
+            case .requestErr(let loginResponse):
+                guard let response = loginResponse as? LoginResponseData else { return }
+                print("requestERR \(response.message)")
+                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+                    self.setTextFieldEmpty()
+                })
+            case .pathErr(let msg):
+                print("pathErr")
+                guard let response = msg as? LoginResponseData else { return }
+                self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
+                    self.setTextFieldEmpty()
+                })
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }

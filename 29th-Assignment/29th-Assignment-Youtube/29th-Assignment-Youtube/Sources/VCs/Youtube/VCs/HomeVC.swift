@@ -9,11 +9,8 @@ import UIKit
 
 class HomeVC: UIViewController {
 
-    @IBOutlet weak var windowSharingButton: UIButton!
-    @IBOutlet weak var notificationButton: UIButton!
-    @IBOutlet weak var searchButton: UIButton!
-    @IBOutlet weak var profileButton: UIButton!
     
+    @IBOutlet weak var customNavigationBar: CustomNavigationBar!
     @IBOutlet weak var channelCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var videoTableView: UITableView!
@@ -25,10 +22,28 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initDataList()
+        //setNotification()
         
         setTableView()
         setCollectionView()
+        
+        customNavigationBar.delegate = self
+        //customNavigationBar.parentViewController = self
     }
+    
+    // notification 코드 
+//    private func setNotification() {
+//        NotificationCenter.default.addObserver(self, selector: #selector(touchProfileButton), name: NSNotification.Name(rawValue: "TouchProfileButton"), object: nil)
+//    }
+//
+//    @objc private func touchProfileButton() {
+//        guard let naviVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationController") as? NavigationController else { return }
+//
+//        naviVC.modalPresentationStyle = .fullScreen
+//        naviVC.modalTransitionStyle = .crossDissolve
+//
+//        present(naviVC, animated: true, completion: nil)
+//    }
     
     func initDataList(){
         videoList.append(contentsOf: [
@@ -76,7 +91,6 @@ class HomeVC: UIViewController {
         let categoryXib = UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil)
         categoryCollectionView.register(categoryXib, forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
     }
-    
 }
 
 extension HomeVC: UITableViewDataSource{
@@ -99,6 +113,7 @@ extension HomeVC: UITableViewDelegate{
 }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout{
+    // sizeForItemAt
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == categoryCollectionView {
             return CGSize(width: categoryList[indexPath.item].size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width + 20, height: 32)
@@ -108,6 +123,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
         }
     }
     
+    // insetForSectionAt
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == categoryCollectionView {
             return UIEdgeInsets.init(top: 0, left: 13, bottom: 0, right: 13)
@@ -116,11 +132,13 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
         }
     }
     
+    // minLineSpacing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             return 0
         
     }
     
+    // minInteritemSpacing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == categoryCollectionView {
             return 9
@@ -131,6 +149,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
 }
 
 extension HomeVC: UICollectionViewDataSource{
+    // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == categoryCollectionView{
             return categoryList.count
@@ -139,6 +158,7 @@ extension HomeVC: UICollectionViewDataSource{
         }
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == categoryCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as? CategoryCollectionViewCell else {return UICollectionViewCell()}

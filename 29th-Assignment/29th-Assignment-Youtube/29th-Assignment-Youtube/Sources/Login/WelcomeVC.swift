@@ -13,7 +13,6 @@ class WelcomeVC: UIViewController {
     
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var otherLoginButton: UIButton!
-    var userName: String?
     
     // MARK: - Life Cycle
     
@@ -26,7 +25,7 @@ class WelcomeVC: UIViewController {
     // MARK: Custom Method
     
     func setUserNameInLabel() {
-        if let user = userName {
+        if let user = UserDefaults.standard.string(forKey: "userName") {
             welcomeLabel.text = "\(user)님 환영합니다!"
             welcomeLabel.sizeToFit()
         }
