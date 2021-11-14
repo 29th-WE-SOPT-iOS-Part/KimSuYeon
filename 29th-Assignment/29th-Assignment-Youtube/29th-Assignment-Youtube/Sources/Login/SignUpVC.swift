@@ -106,15 +106,15 @@ extension SignUpVC {
                         self.present(welcomeVC, animated: true, completion: nil)
                     })
                 }
-            case .requestErr(let loginResponse):
-                guard let response = loginResponse as? LoginResponseData else { return }
+            case .requestErr(let signUpResponse):
+                guard let response = signUpResponse as? SignUpResponseData else { return }
                 print("requestERR \(response.message)")
                 self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
                     self.setTextFieldEmpty()
                 })
             case .pathErr(let msg):
                 print("pathErr")
-                guard let response = msg as? LoginResponseData else { return }
+                guard let response = msg as? SignUpResponseData else { return }
                 self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
                     self.setTextFieldEmpty()
                 })
