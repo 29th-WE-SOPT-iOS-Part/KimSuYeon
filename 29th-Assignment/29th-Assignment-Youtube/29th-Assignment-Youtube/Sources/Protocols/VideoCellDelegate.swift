@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import UIKit
 
 protocol VideoCellDelegate {
-    func tapDetailVideo()
+    func tapDetailVideo(image: UIImage, title: String, description: String)
 }
