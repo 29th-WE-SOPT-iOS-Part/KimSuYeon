@@ -121,6 +121,21 @@
             </objects>
             <point key="canvasLocation" x="-1046" y="831"/>
         </scene>
+        <!--Detail VideoVC-->
+        <scene sceneID="LyE-fq-hJA">
+            <objects>
+                <viewController storyboardIdentifier="DetailVideoVC" id="0p3-Pc-PYd" customClass="DetailVideoVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tbr-hR-YOp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TUQ-PW-1To"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIE-Fl-OOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046" y="1508"/>
+        </scene>
         <!--Item-->
         <scene sceneID="aSs-iU-jmi">
             <objects>

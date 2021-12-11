@@ -29,3 +29,12 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+extension HomeVC: VideoCellDelegate {
+    func tapDetailVideo() {
+        guard let nextVC = storyboard?.instantiateViewController(withIdentifier: DetailVideoVC.identifier) as? DetailVideoVC else { return }
+
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true, completion: nil)
+    }
+}

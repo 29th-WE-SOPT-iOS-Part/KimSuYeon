@@ -102,6 +102,7 @@ extension HomeVC: UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: VideoTableViewCell.identifier) as? VideoTableViewCell else {return UITableViewCell()}
         
         cell.setData(videoData: videoList[indexPath.row])
+        cell.videoDelegate = self
         return cell
     }
 }
