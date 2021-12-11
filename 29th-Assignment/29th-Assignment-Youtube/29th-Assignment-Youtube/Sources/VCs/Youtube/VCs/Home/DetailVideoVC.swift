@@ -21,7 +21,7 @@ class DetailVideoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-        setSkeleton()
+        //setSkeleton()
     }
     
     @IBAction func backButtonDidTapped(_ sender: UIButton) {
