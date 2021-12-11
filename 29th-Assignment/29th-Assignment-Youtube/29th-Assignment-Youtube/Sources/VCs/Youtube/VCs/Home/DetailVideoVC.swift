@@ -7,6 +7,8 @@
 
 import UIKit
 
+import SkeletonView
+
 class DetailVideoVC: UIViewController {
     static let identifier = "DetailVideoVC"
 
@@ -19,6 +21,7 @@ class DetailVideoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setSkeleton()
     }
     
     @IBAction func backButtonDidTapped(_ sender: UIButton) {
@@ -35,5 +38,22 @@ extension DetailVideoVC {
 
         descriptionLabel.textColor = UIColor(red: 0.376, green: 0.376, blue: 0.376, alpha: 1)
         descriptionLabel.font = UIFont(name: "SFProDisplay-Regular", size: 13)
+    }
+
+    func setSkeleton() {
+
+        self.titleLabel.linesCornerRadius = 5
+        self.descriptionLabel.linesCornerRadius = 5
+
+        self.titleLabel.numberOfLines = 0
+        self.descriptionLabel.numberOfLines = 0
+
+        view.showAnimatedSkeleton()
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            self?.view.stopSkeletonAnimation()
+            self?.view.hideSkeleton(reloadDataAfter: true)
+        }
+        
     }
 }

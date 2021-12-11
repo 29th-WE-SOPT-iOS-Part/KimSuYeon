@@ -135,18 +135,27 @@
                                     <constraint firstAttribute="width" constant="375" id="SWe-zc-zJX"/>
                                     <constraint firstAttribute="height" constant="212" id="hw9-VQ-0lT"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jJ-8q-bCQ">
-                                <rect key="frame" x="12" y="299" width="351" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jJ-8q-bCQ">
+                                <rect key="frame" x="12" y="302.33333333333331" width="351" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-ko-gCE">
-                                <rect key="frame" x="12" y="274" width="316" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-ko-gCE">
+                                <rect key="frame" x="12" y="274" width="316" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF9-7p-J0L">
                                 <rect key="frame" x="5" y="59" width="43" height="31"/>
@@ -175,7 +184,7 @@
                             <constraint firstItem="c9m-ko-gCE" firstAttribute="leading" secondItem="TUQ-PW-1To" secondAttribute="leading" constant="12" id="1ox-H5-dv2"/>
                             <constraint firstItem="c9m-ko-gCE" firstAttribute="top" secondItem="g2p-k3-DUJ" secondAttribute="bottom" constant="12" id="2Aa-3h-Rmw"/>
                             <constraint firstItem="TUQ-PW-1To" firstAttribute="trailing" secondItem="g2p-k3-DUJ" secondAttribute="trailing" id="BDf-U9-9Ii"/>
-                            <constraint firstItem="6jJ-8q-bCQ" firstAttribute="top" secondItem="c9m-ko-gCE" secondAttribute="bottom" constant="4" id="BS9-8L-PKC"/>
+                            <constraint firstItem="6jJ-8q-bCQ" firstAttribute="top" secondItem="c9m-ko-gCE" secondAttribute="bottom" constant="8" id="BS9-8L-PKC"/>
                             <constraint firstItem="6jJ-8q-bCQ" firstAttribute="leading" secondItem="TUQ-PW-1To" secondAttribute="leading" constant="12" id="JgF-Va-UBZ"/>
                             <constraint firstItem="rF9-7p-J0L" firstAttribute="top" secondItem="TUQ-PW-1To" secondAttribute="top" constant="15" id="LSF-zt-2zV"/>
                             <constraint firstItem="TUQ-PW-1To" firstAttribute="trailing" secondItem="6jJ-8q-bCQ" secondAttribute="trailing" constant="12" id="TUZ-qQ-1pC"/>
@@ -186,6 +195,9 @@
                             <constraint firstItem="kaZ-0b-5yh" firstAttribute="leading" secondItem="c9m-ko-gCE" secondAttribute="trailing" constant="12" id="nUl-ra-mb5"/>
                             <constraint firstItem="TUQ-PW-1To" firstAttribute="trailing" secondItem="kaZ-0b-5yh" secondAttribute="trailing" constant="5" id="wz1-Tu-0Yp"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="rF9-7p-J0L" id="FoJ-Ve-I1N"/>
@@ -197,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIE-Fl-OOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1046" y="1508"/>
+            <point key="canvasLocation" x="-1047.2" y="1507.3891625615763"/>
         </scene>
         <!--Item-->
         <scene sceneID="aSs-iU-jmi">
