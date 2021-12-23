@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol VideoCellDelegate {
-    func tapDetailVideo(image: UIImage, title: String, description: String)
+    func videoCellDidTapped(image: UIImage, title: String, description: String)
 }

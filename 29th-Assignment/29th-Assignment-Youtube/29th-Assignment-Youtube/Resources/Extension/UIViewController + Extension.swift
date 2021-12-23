@@ -30,16 +30,3 @@ extension UIViewController {
     }
 }
 
-extension HomeVC: VideoCellDelegate {
-    func tapDetailVideo(image: UIImage, title: String, description: String) {
-        guard let nextVC = storyboard?.instantiateViewController(withIdentifier: DetailVideoVC.identifier) as? DetailVideoVC else { return }
-
-        nextVC.modalPresentationStyle = .fullScreen
-        present(nextVC, animated: true, completion: {
-            nextVC.detailVideoImageView.image = image
-            nextVC.titleLabel.text = title
-            nextVC.descriptionLabel.text = description
-        })
-    }
-}
-

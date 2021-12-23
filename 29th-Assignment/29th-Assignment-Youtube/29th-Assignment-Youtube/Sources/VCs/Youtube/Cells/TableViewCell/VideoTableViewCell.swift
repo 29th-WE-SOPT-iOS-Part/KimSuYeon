@@ -55,6 +55,6 @@ extension VideoTableViewCell {
 
     @objc
     func tapVideoImageView(gestureRecognizer: UIGestureRecognizer){
-        self.videoDelegate?.tapDetailVideo(image: thumbnailImageView.image ?? UIImage(), title: titleLabel.text ?? "" , description: descriptionLabel.text ?? "")
+        self.videoDelegate?.videoCellDidTapped(image: thumbnailImageView.image ?? UIImage(), title: titleLabel.text ?? "" , description: descriptionLabel.text ?? "")
     }
 }

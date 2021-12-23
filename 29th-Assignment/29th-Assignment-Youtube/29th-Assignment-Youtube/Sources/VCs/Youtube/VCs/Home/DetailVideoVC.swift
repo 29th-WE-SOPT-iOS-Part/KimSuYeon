@@ -9,7 +9,7 @@ import UIKit
 
 import SkeletonView
 
-class DetailVideoVC: UIViewController {
+final class DetailVideoVC: UIViewController {
     static let identifier = "DetailVideoVC"
 
     @IBOutlet weak var detailVideoImageView: UIImageView!
@@ -21,7 +21,7 @@ class DetailVideoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-        //setSkeleton()
+        setSkeleton()
     }
     
     @IBAction func backButtonDidTapped(_ sender: UIButton) {
@@ -48,11 +48,12 @@ extension DetailVideoVC {
         self.titleLabel.numberOfLines = 0
         self.descriptionLabel.numberOfLines = 0
 
-        view.showAnimatedSkeleton()
+        view.showAnimatedSkeleton(transition: .crossDissolve(0.25))
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
-            self?.view.stopSkeletonAnimation()
-            self?.view.hideSkeleton(reloadDataAfter: true)
+        // GCD 호출은 나중에 실행하기 위해 저장하지 않는 한 순환참조의 위험이 없다.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.view.stopSkeletonAnimation()
+            self.view.hideSkeleton(transition: .crossDissolve(0.25))
         }
         
     }
