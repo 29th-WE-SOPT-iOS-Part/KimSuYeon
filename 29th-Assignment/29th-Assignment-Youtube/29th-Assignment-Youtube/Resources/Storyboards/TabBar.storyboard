@@ -121,6 +121,104 @@
             </objects>
             <point key="canvasLocation" x="-1046" y="831"/>
         </scene>
+        <!--Detail VideoVC-->
+        <scene sceneID="LyE-fq-hJA">
+            <objects>
+                <viewController storyboardIdentifier="DetailVideoVC" id="0p3-Pc-PYd" customClass="DetailVideoVC" customModule="_9th_Assignment_Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="Tbr-hR-YOp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-k3-DUJ">
+                                <rect key="frame" x="0.0" y="50" width="375" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="SWe-zc-zJX"/>
+                                    <constraint firstAttribute="height" constant="212" id="hw9-VQ-0lT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jJ-8q-bCQ">
+                                <rect key="frame" x="12" y="282" width="351" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-ko-gCE">
+                                <rect key="frame" x="12" y="274" width="316" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF9-7p-J0L">
+                                <rect key="frame" x="5" y="59" width="43" height="31"/>
+                                <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonDidTapped:" destination="0p3-Pc-PYd" eventType="touchUpInside" id="jeK-bU-Ywk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-0b-5yh">
+                                <rect key="frame" x="340" y="272" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="6Tq-q0-SUA"/>
+                                    <constraint firstAttribute="width" secondItem="kaZ-0b-5yh" secondAttribute="height" multiplier="1:1" id="ceF-0y-vyy"/>
+                                    <constraint firstAttribute="height" constant="30" id="kKv-wc-2BS"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TUQ-PW-1To"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c9m-ko-gCE" firstAttribute="leading" secondItem="TUQ-PW-1To" secondAttribute="leading" constant="12" id="1ox-H5-dv2"/>
+                            <constraint firstItem="c9m-ko-gCE" firstAttribute="top" secondItem="g2p-k3-DUJ" secondAttribute="bottom" constant="12" id="2Aa-3h-Rmw"/>
+                            <constraint firstItem="TUQ-PW-1To" firstAttribute="trailing" secondItem="g2p-k3-DUJ" secondAttribute="trailing" id="BDf-U9-9Ii"/>
+                            <constraint firstItem="6jJ-8q-bCQ" firstAttribute="top" secondItem="c9m-ko-gCE" secondAttribute="bottom" constant="8" id="BS9-8L-PKC"/>
+                            <constraint firstItem="6jJ-8q-bCQ" firstAttribute="leading" secondItem="TUQ-PW-1To" secondAttribute="leading" constant="12" id="JgF-Va-UBZ"/>
+                            <constraint firstItem="rF9-7p-J0L" firstAttribute="top" secondItem="TUQ-PW-1To" secondAttribute="top" constant="15" id="LSF-zt-2zV"/>
+                            <constraint firstItem="TUQ-PW-1To" firstAttribute="trailing" secondItem="6jJ-8q-bCQ" secondAttribute="trailing" constant="12" id="TUZ-qQ-1pC"/>
+                            <constraint firstItem="rF9-7p-J0L" firstAttribute="leading" secondItem="TUQ-PW-1To" secondAttribute="leading" constant="5" id="UNr-bj-uv1"/>
+                            <constraint firstItem="g2p-k3-DUJ" firstAttribute="top" secondItem="Tbr-hR-YOp" secondAttribute="top" constant="50" id="XLq-wA-y32"/>
+                            <constraint firstItem="kaZ-0b-5yh" firstAttribute="top" secondItem="g2p-k3-DUJ" secondAttribute="bottom" constant="10" id="hcX-MZ-CVB"/>
+                            <constraint firstItem="g2p-k3-DUJ" firstAttribute="leading" secondItem="TUQ-PW-1To" secondAttribute="leading" id="iVO-IM-5GD"/>
+                            <constraint firstItem="kaZ-0b-5yh" firstAttribute="leading" secondItem="c9m-ko-gCE" secondAttribute="trailing" constant="12" id="nUl-ra-mb5"/>
+                            <constraint firstItem="TUQ-PW-1To" firstAttribute="trailing" secondItem="kaZ-0b-5yh" secondAttribute="trailing" constant="5" id="wz1-Tu-0Yp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="rF9-7p-J0L" id="FoJ-Ve-I1N"/>
+                        <outlet property="descriptionLabel" destination="6jJ-8q-bCQ" id="RiS-c7-cQe"/>
+                        <outlet property="detailButton" destination="kaZ-0b-5yh" id="39m-KA-tbW"/>
+                        <outlet property="detailVideoImageView" destination="g2p-k3-DUJ" id="Ilh-aj-81V"/>
+                        <outlet property="titleLabel" destination="c9m-ko-gCE" id="Xq2-RY-pd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIE-Fl-OOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1047.2" y="1507.3891625615763"/>
+        </scene>
         <!--Item-->
         <scene sceneID="aSs-iU-jmi">
             <objects>
@@ -215,6 +313,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
